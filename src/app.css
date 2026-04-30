@@ -1,0 +1,402 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms' {
+  strategy: 'base';
+}
+
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --text-*: initial;
+  --text-xs: 0.625rem;
+  --text-sm: 0.8125rem;
+  --text-md: 1rem;
+  --text-2md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-2lg: 1.375rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2rem;
+
+  --leading-*: initial;
+  --leading-xs: 1;
+  --leading-sm: 1.1;
+  --leading-md: 1.3;
+  --leading-lg: 1.5;
+
+  --breakpoint-*: initial;
+  --breakpoint-xs: 26.25rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 121rem;
+
+  --color-*: initial;
+  --color-branco: white;
+  --color-dark: #334155;
+  --color-preto: black;
+  --color-vermelho: red;
+  --color-background: #fefeff;
+
+  --shadow-container: 0 0 10px rgba(22, 56, 203, 0.5);
+  --shadow-container--vermelho: 0 0 10px 2px rgb(255, 0, 0, 1);
+  --shadow-container--ouro: 0 0 10px 2px gold;
+
+  --color-principal-primeira: #1638cb;
+  --color-principal-primeira-dark: #0099ff;
+  --color-principal-segunda: #ffe400;
+  --color-principal-segunda-dark: #ccb800;
+  --color-principal-terceira: #0cbe42;
+  --color-principal-terceira-dark: #339952;
+  --color-auxiliar-primeira: #617ef6;
+  --color-auxiliar-segunda: #f8f9ff;
+  --color-auxiliar-terceira: #8b9be5;
+  --color-auxiliar-terceira30: #dce2f7ff;
+  --color-auxiliar-quarta: #ececec;
+  --color-auxiliar-quinta: #e8f0fa;
+  --color-auxiliar-sexta: #dae2ff;
+  --color-branco-1-principal-claro: #fff;
+  --color-branco-2: #CCCCCC;
+  --color-branco-3: #A6A6A6;
+  --color-branco-4: #737373;
+  --color-branco-5-escuro: #333333;
+  --color-azul-1-claro: #D1D9FA;
+  --color-azul-2: #A3B2F5;
+  --color-azul-3: #617EF7;
+  --color-azul-4-principal: #1638CB;
+  --color-azul-5-escuro: #0A1B61;
+  --color-verde-1-claro: #CCFFDE;
+  --color-verde-2: #99FFBD;
+  --color-verde-3: #4DFF8C;
+  --color-verde-4-principal: #00C947;
+  --color-verde-5-escuro: #006624;
+  --color-amarelo-1-claro: #FFFACC;
+  --color-amarelo-2: #FFF499;
+  --color-amarelo-3: #FFEC4D;
+  --color-amarelo-4-principal: #FFE400;
+  --color-amarelo-5-escuro: #665B00;
+  --color-ouro: #FFD700;
+  --color-roxo-1-claro: #DCD8F2;
+  --color-roxo-2: #B9B2E6;
+  --color-roxo-3: #8577D4;
+  --color-roxo-4-principal: #503DC2;
+  --color-roxo-5-escuro: #302475;
+  --color-laranja-1-claro: #FFEDCC;
+  --color-laranja-2: #FFDB99;
+  --color-laranja-3: #FFC04D;
+  --color-laranja-4-principal: #FFA500;
+  --color-laranja-5-escuro: #996300;
+  --color-vermelho-1-claro: #FFCCCC;
+  --color-vermelho-2: #FF9999;
+  --color-vermelho-3: #FF4D4D;
+  --color-vermelho-4-principal: #FF0000;
+  --color-vermelho-5-escuro: #990000;
+
+  --font-*: initial;
+  --font-montserrat: Montserrat Variable;
+
+  --animate-slide-to-left: slideToLeft 1s ease alternate;
+  --animate-slide-to-right: slideToRight 1s ease alternate;
+  --animate-shimmer: shimmer 1.5s linear infinite;
+  --animate-pulse-shadow: pulseShadow 1.5s ease-out infinite;
+
+  @keyframes pulseShadow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.9);
+    }
+
+    100% {
+      box-shadow: 0 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+  }
+
+  @keyframes slideToLeft {
+    0% {
+      transform: translateX(360px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes slideToRight {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(360px);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+
+@media (max-width: 1299px) {
+  :root{
+    --swiper-pagination-bottom: 50px
+  }
+}
+@media (min-width: 1300px) {
+  :root{
+    --swiper-pagination-bottom: 5px
+  }
+}
+
+* {
+  --gradiente-verde-azul: 90deg, #CCFFDE 0%, #FFE966 50%, #5C76E0 75%, #4367FF 100%;
+  --gradiente-azul: 45deg, #A3B2F5 0%, #5C76E0 30%, #3957D6 60%, #1639CB 100%;
+  --gradiente-azul-2: 45deg, #889EFF 0%, #6682FF 50%, #4367FF 100%;
+  --gradiente-ouro: 45deg, #FFFACC 0%, #FFE966 65%, #FFD700 100%;
+}
+
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+
+.nlf-item-com-icone {
+  /* V3 */
+  @apply max-lg:text-xs lg:max-3xl:text-sm 3xl:text-md leading-sm;
+}
+
+.nlf-item-menu-principal {
+  @apply font-bold max-lg:text-sm lg:max-3xl:text-md 3xl:text-lg leading-xs;
+}
+
+.nlf-item-menu-secundario {
+  @apply font-light max-3xl:text-sm 3xl:text-md leading-md;
+}
+
+.nlf-titulo-card {
+  @apply font-black max-lg:text-2lg lg:text-[30px] leading-xs;
+}
+
+.nlf-titulo-h1 {
+  @apply font-black max-lg:text-3xl lg:max-3xl:text-[40px] 3xl:text-[55px] leading-sm;
+}
+
+.nlf-titulo-h2 {
+  @apply font-black max-lg:text-2lg lg:max-3xl:text-[26px] 3xl:text-2xl leading-sm;
+}
+
+.nlf-titulo-h3 {
+  @apply font-semibold max-lg:text-2md lg:max-3xl:text-lg 3xl:text-2lg leading-sm;
+}
+
+.nlf-subtitulo--h1 {
+  @apply font-extralight max-lg:text-2lg lg:max-3xl:text-[25px] 3xl:text-[30px] leading-sm;
+}
+
+.nlf-subtitulo--h2 {
+  @apply font-extralight max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm;
+}
+
+.nlf-subtitulo--h3 {
+  @apply font-extralight text-md leading-sm;
+}
+
+.nlf-nota-rodape {
+  @apply max-lg:text-xs lg:text-sm font-light leading-sm;
+}
+
+.nlf-paragrafo {
+  @apply max-lg:text-sm lg:max-3xl:text-md 3xl:text-2md leading-lg;
+}
+
+.nlf-info-irrelevante {
+  @apply text-xs leading-md font-light;
+}
+
+.nlf-enfase {
+  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm;
+}
+
+.nlf-container {
+  @apply w-full mx-auto max-w-384;
+}
+
+.nlf-padding {
+  @apply max-lg:px-5 lg:max-2xl:px-10;
+}
+
+.nlf-input {
+  @apply border text-sm text-preto rounded-md active:outline-hidden focus:outline-hidden active:ring-0 focus:ring-0 h-11.75 border-auxiliar-primeira shadow-[-0.2rem_0.2rem_0_#617EF6];
+}
+
+.nlf-input-file {
+  @apply text-sm w-max max-w-[400px];
+}
+
+.nlf-input-file--field {
+  @apply flex text-sm text-preto justify-center py-10 items-center w-full border border-auxiliar-primeira rounded-md shadow-[-0.2rem_0.2rem_0_#617EF6] active:outline-hidden focus:outline-hidden active:ring-0 focus:ring-0 active:border-principal-terceira focus:border-principal-terceira active:shadow-principal-terceira focus:shadow-principal-terceira;
+}
+
+.nlf-input--foco {
+  @apply active:border-principal-terceira focus:border-principal-terceira active:shadow-principal-terceira focus:shadow-principal-terceira w-full;
+}
+
+.nlf-input--invalido {
+  @apply border-vermelho active:border-vermelho focus:border-vermelho active:shadow-vermelho focus:shadow-vermelho shadow-[-0.2rem_0.2rem_0_red];
+}
+
+.nlf-input-textarea {
+  @apply w-full border text-sm text-preto border-auxiliar-primeira rounded-md shadow-[-0.2rem_0.2rem_0_#617EF6] active:outline-hidden focus:outline-hidden active:ring-0 focus:ring-0 active:border-principal-terceira focus:border-principal-terceira active:shadow-principal-terceira focus:shadow-principal-terceira;
+}
+
+.nlf-botao {
+  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl max-md:px-3 max-md:py-5 md:p-5 text-center w-full md:max-w-88 nlf-grow cursor-pointer;
+}
+
+.nlf-botao--livre {
+  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl max-md:px-3 max-md:py-5 md:p-5 text-center w-full nlf-grow cursor-pointer;
+}
+
+.nlf-botao-compacto {
+  @apply text-sm flex items-center justify-center font-bold rounded-xl p-3 text-center w-full max-xs:max-w-[130px] xs:max-lg:max-w-40 lg:max-w-48 nlf-grow cursor-pointer;
+}
+
+.nlf-botao--submit {
+  @apply bg-principal-terceira text-branco;
+}
+
+.nlf-botao--azul {
+  @apply bg-principal-primeira text-branco;
+}
+
+.nlf-botao--cta {
+  @apply bg-principal-terceira text-branco border-2 border-branco;
+}
+
+.nlf-botao--destaque {
+  @apply bg-principal-segunda text-principal-primeira shadow-[-0.3rem_0.3rem_0_#1639CB];
+}
+
+.nlf-botao--gold {
+  @apply bg-[gold] max-xs:w-full;
+}
+
+@utility nlf-grow {
+  transition: transform 0.4s ease-in-out;
+  @apply hover:scale-[1.05] transition-all duration-500;
+}
+
+.shimmer {
+  @apply overflow-hidden relative before:content-[''] before:bg-[linear-gradient(90deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.8)_40%,rgba(255,255,255,0)_100%)] before:absolute before:h-full before:w-full before:z-50 before:animate-shimmer;
+}
+
+.nlf-botao-full {
+  /* V2 */
+
+  /* .nlf-subtitulo {
+    @apply font-light text-lg leading-sm;
+  }
+
+  .nlf-etiquetas {
+    @apply font-extralight text-md leading-sm;
+  }
+
+  .nlf-nota_rodape {
+    @apply font-light text-sm leading-md;
+  }
+
+  .nlf-letras_miudas {
+    @apply font-light text-[0.625rem] leading-md;
+  } */
+
+  /* SEÇÕES */
+
+  /* .nlf-container-filho {
+    @apply max-w-[96rem] max-xl:px-5 xl:max-2xl:px-[5%];
+  }
+
+  .nlf-secao-block {
+    @apply flex flex-col gap-5;
+  } */
+
+  /* ELEMENTOS */
+  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl text-center w-full;
+}
+
+.nlf-botao-principal--livre {
+  @apply px-5 bg-principal-segunda text-auxiliar-terceira shadow-[-0.3rem_0.3rem_0_#1639CB];
+}
+
+.nlf-botao-secundario {
+  @apply px-5 py-3 bg-principal-primeira text-branco shadow-[-0.3rem_0.3rem_0_#FFE404];
+}
+
+.nlf-botao-secundario--livre {
+  @apply px-5 bg-principal-primeira text-branco shadow-[-0.3rem_0.3rem_0_#FFE404];
+}
+
+.nlf-botao-secundario--sem_sombra {
+  @apply px-5 py-3 bg-principal-primeira text-branco;
+}
+
+.nlf-botao-paginacao {
+  @apply font-bold rounded-xl text-center max-md:w-full md:w-max px-5 py-3 shadow-[-0.3rem_0.3rem_0_#FFE404] text-branco;
+}
+
+.nlf-botao-paginacao__habilitado {
+  @apply cursor-pointer nlf-grow bg-principal-primeira;
+}
+
+.nlf-botao-paginacao__desabilitado {
+  @apply cursor-auto bg-principal-primeira/20;
+}
+
+.nlf-botao-auxiliar {
+  @apply px-5 py-3 border-2 border-auxiliar-primeira dark:border-branco dark:text-branco text-auxiliar-primeira;
+}
+
+
+/* ESTILO */
+.link {
+  @apply hover:underline hover:underline-offset-4 decoration-2 decoration-transparent hover:decoration-principal-terceira transition-all duration-400 decoration-solid;
+}
+
+.link-underline {
+  @apply underline underline-offset-2 decoration-1 decoration-solid;
+}
+
+.link-underline-hover {
+  @apply hover:underline hover:underline-offset-2 decoration-1 decoration-transparent hover:decoration-preto decoration-solid transition-all duration-400;
+}
+
+.link-underline--verde {
+  @apply decoration-principal-terceira decoration-2;
+}
+
+.link-line {
+  @apply underline underline-offset-4 decoration-[3px] decoration-principal-terceira decoration-solid;
+}

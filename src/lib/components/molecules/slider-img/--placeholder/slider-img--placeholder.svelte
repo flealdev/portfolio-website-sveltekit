@@ -1,0 +1,1 @@
+<div class="flex rounded-xl w-full max-2xl:max-w-[37.5rem] 2xl:max-w-[50rem] max-sm:aspect-[6/8] sm:aspect-[8/6] bg-[#DCDCDC] shimmer"></div>

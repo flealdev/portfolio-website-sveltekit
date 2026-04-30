@@ -1,0 +1,16 @@
+<script>
+  const { titulo, descricao, frase, src, alt } = $props();
+</script>
+
+<div
+  class="flex flex-col items-center w-full max-w-[25rem] justify-center gap-[10px]"
+>
+  <img {src} {alt} />
+  <div
+    class="flex flex-col gap-[10px] text-preto bg-auxiliar-segunda p-[20px] border-b-[5px] border-principal-primeira rounded-md"
+  >
+    <h3 class="nlf-titulo-h3 text-auxiliar-primeira">{titulo}</h3>
+    <p class="nlf-paragrafo">{descricao}</p>
+    <p class="nlf-paragrafo font-bold">{frase}</p>
+  </div>
+</div>

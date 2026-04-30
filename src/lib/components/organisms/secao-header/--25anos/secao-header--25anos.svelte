@@ -1,0 +1,75 @@
+<script>
+  import MenuMobile from "$lib/components/molecules/menu/--mobile/menu--mobile.svelte";
+  import Menu from "$lib/components/molecules/menu/menu.svelte";
+  import Topbar25Anos from "$lib/components/molecules/topbar/--25anos/topbar--25anos.svelte";
+  import Breadcrumbs from "$lib/components/molecules/breadcrumbs/breadcrumbs.svelte";
+  // import tema from "$lib/stores/tema.svelte";
+  import Menu_25anos from "$lib/components/molecules/menu/--25anos/menu--25anos.svelte";
+</script>
+
+  <Topbar25Anos bgCor="bg-azul-4-principal" padding="px-5 py-2" />
+  <header class="max-2xl:px-5 sticky top-0 z-[2000] pt-3 pb-5 nlf-container">
+    <div
+      class="flex flex-wrap max-md:gap-3 md:gap-5 items-center max-lg:px-5 lg:px-10 justify-between max-md:pt-5 max-md:pb-[25px] md:py-[30px] shadow-container border-azul-2 border-[5px] max-md:rounded-[30px] md:rounded-[50px] bg-linear-[-109deg,#1638CB_0%,#1F49FF_80%,#1638CB_100%] sticky top-0 z-[200000]"
+    >
+      <div class="flex gap-5 items-center order-1">
+        <a
+          href="/"
+          class=" max-xs:max-w-[80px] xs:max-md:max-w-[100px] md:max-w-[150px]"
+        >
+          <img
+            src="/assets/25anos/logo-branca-400px.webp"
+            alt=""
+            class="w-full max-xs:max-w-[80px] xs:max-md:max-w-[100px] md:max-w-[120px] aspect-80/44"
+          />
+        </a>
+        <img
+          src="/assets/25anos/logo-25anos-branca-400px.webp"
+          alt=""
+          class="max-xl:hidden w-full max-xs:max-w-[40px] xs:max-w-[60px] order-2"
+        />
+      </div>
+      <img
+        src="/assets/25anos/logo-25anos-branca-400px.webp"
+        alt=""
+        class="xl:hidden w-full max-xs:max-w-[40px] xs:max-w-[60px] order-2"
+      />
+      <div
+        class="max-xl:hidden xl:flex xl:max-xl:flex-col justify-end items-end max-xl:gap-3 xl:gap-5 max-xl:order-2 xl:order-3"
+      >
+        <a
+          href="/indique"
+          class="nlf-botao nlf-botao--gold flex justify-center items-center text-preto gap-[10px]"
+        >
+          <svg width="21" height="21" viewBox="0 0 21 21">
+            <path
+              d="M9.06952 14.967C9.06952 13.7392 9.42682 12.5949 10.0432 11.6325L2.64214 11.6331C1.45906 11.6331 0.5 12.5921 0.5 13.7752V14.6515C0.5 15.1964 0.669933 15.7277 0.986138 16.1715C2.45511 18.2332 4.85834 19.2544 8.11698 19.2544C9.00408 19.2544 9.82793 19.1788 10.5857 19.0263C9.64123 17.9393 9.06952 16.52 9.06952 14.967Z"
+              fill="#1638CB"
+            />
+            <path
+              d="M12.8797 4.96973C12.8797 2.33937 10.7473 0.207031 8.11698 0.207031C5.48658 0.207031 3.35424 2.33937 3.35424 4.96973C3.35424 7.6001 5.48658 9.73245 8.11698 9.73245C10.7473 9.73245 12.8797 7.6001 12.8797 4.96973Z"
+              fill="#1638CB"
+            />
+            <path
+              d="M20.5 14.9669C20.5 12.0736 18.1544 9.72797 15.261 9.72797C12.3676 9.72797 10.0221 12.0736 10.0221 14.9669C10.0221 17.8604 12.3676 20.2059 15.261 20.2059C18.1544 20.2059 20.5 17.8604 20.5 14.9669ZM15.1754 11.6408L15.261 11.6331L15.3466 11.6408C15.541 11.676 15.6943 11.8294 15.7296 12.0238L15.7373 12.1093L15.7363 14.4907H18.1224L18.208 14.4984C18.4023 14.5336 18.5557 14.687 18.5909 14.8814L18.5986 14.9669L18.5909 15.0526C18.5557 15.247 18.4023 15.4003 18.208 15.4356L18.1224 15.4432H15.7363L15.7373 17.8246L15.7296 17.9102C15.6943 18.1046 15.541 18.2579 15.3466 18.2932L15.261 18.3008L15.1754 18.2932C14.981 18.2579 14.8277 18.1046 14.7924 17.9102L14.7848 17.8246L14.7838 15.4432H12.4071L12.3215 15.4356C12.1271 15.4003 11.9738 15.247 11.9385 15.0526L11.9309 14.9669L11.9385 14.8814C11.9738 14.687 12.1271 14.5336 12.3215 14.4984L12.4071 14.4907H14.7838L14.7848 12.1093L14.7924 12.0238C14.8277 11.8294 14.981 11.676 15.1754 11.6408Z"
+              fill="#1638CB"
+            />
+          </svg><span>Indique</span></a
+        >
+        <a
+          href="https://sac.newlifefibra.com.br/sac/login/?sys=SAC"
+          target="_blank"
+          class="lg:items-center w-max lg:justify-center nlf-botao bg-branco text-azul-4-principal flex gap-[10px]"
+        >
+          <svg width="21" height="21" viewBox="0 0 21 21">
+            <path
+              d="M9.06957 12.5856C9.06957 12.2515 9.12691 11.9309 9.23216 11.6329H2.64213C1.45906 11.6329 0.5 12.5921 0.5 13.7751V14.6514C0.5 15.1964 0.669932 15.7277 0.986146 16.1715C2.45511 18.2331 4.85832 19.2544 8.11692 19.2544C8.49557 19.2544 8.86277 19.2406 9.21826 19.2129C9.12186 18.9265 9.06957 18.6198 9.06957 18.3008V12.5856ZM8.11692 0.207031C10.7473 0.207031 12.8796 2.33935 12.8796 4.96971C12.8796 7.60006 10.7473 9.73235 8.11692 9.73235C5.48655 9.73235 3.35424 7.60006 3.35424 4.96971C3.35424 2.33935 5.48655 0.207031 8.11692 0.207031ZM10.0221 12.5856C10.0221 11.5334 10.875 10.6805 11.9272 10.6805H18.5949C19.6471 10.6805 20.5 11.5334 20.5 12.5856V18.3008C20.5 19.353 19.6471 20.2059 18.5949 20.2059H11.9272C10.875 20.2059 10.0221 19.353 10.0221 18.3008V12.5856ZM12.4034 13.5381C12.1404 13.5381 11.9272 13.7514 11.9272 14.0144C11.9272 14.2774 12.1404 14.4907 12.4034 14.4907H18.1187C18.3817 14.4907 18.5949 14.2774 18.5949 14.0144C18.5949 13.7514 18.3817 13.5381 18.1187 13.5381H12.4034ZM12.4034 16.3957C12.1404 16.3957 11.9272 16.609 11.9272 16.872C11.9272 17.135 12.1404 17.3483 12.4034 17.3483H18.1187C18.3817 17.3483 18.5949 17.135 18.5949 16.872C18.5949 16.609 18.3817 16.3957 18.1187 16.3957H12.4034Z"
+              fill="#1638CB"
+            />
+          </svg><span class="w-max">Área do cliente</span></a
+        >
+      </div>
+      <Menu_25anos class="md:max-lg:w-full" order="max-lg:order-3 lg:order-2" />
+    </div>
+  </header>
+  <Breadcrumbs classes="max-md:pl-5 max-lg:px-5 lg:max-2xl:px-10" />
