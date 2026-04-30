@@ -8,12 +8,12 @@
   } from "$lib/core/utils";
   import { onMount } from "svelte";
 
-  let montado = false;
+  let montado = $state(false);
   onMount(() => {
     montado = true;
   });
 
-  let cookieConsentido = false;
+  let cookieConsentido = $state(false);
   if (browser) {
     cookieConsentido = retornaCookie("consent");
   }

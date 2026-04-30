@@ -2,12 +2,9 @@
 	import MetaTags from "$lib/components/molecules/metatags/metatags.svelte";
     import FormConsultaBase from "$lib/components/molecules/form-consulta-base/form-consulta-base.svelte";
 
-	/*
-		SISTEMA PARA CONSULTA DE CLIENTES ATIVOS v0.1.0
-			- Consulta somente clientes ativos baseado no CPF informado, buscando código e lista de contratos ativos e retorna o primeiro nome do cliente caso seja ativo.
-			- Baseado na API oficial do MK.
-	*/
-	export let data;
+	
+	/** @type {{data: any}} */
+	let { data } = $props();
 
 	const { titulo } = data;
 

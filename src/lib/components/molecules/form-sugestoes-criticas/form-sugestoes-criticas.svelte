@@ -90,7 +90,7 @@
         maxlength="1000"
         bind:value={$form.relato}
         required
-      />
+></textarea>
       <!-- <span
                 class="font-bold text-right text-auxiliar-primeira dark:text-branco"
                 ><span style="color: {$form.relato.length === 1000 ? 'red' : '#617EF6'}"

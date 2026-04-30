@@ -7,7 +7,8 @@
   import { fade, scale } from "svelte/transition";
   import ErroFormulario from "$lib/components/atoms/aviso-erro-formulario/aviso-erro-formulario.svelte";
 
-  export let assunto = "";
+  /** @type {{assunto?: string}} */
+  let { assunto = "" } = $props();
 
   // SuperForm
   const { form, errors, enhance, message } = superForm({

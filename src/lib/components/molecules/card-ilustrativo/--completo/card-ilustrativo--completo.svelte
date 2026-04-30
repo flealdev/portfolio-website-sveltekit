@@ -1,5 +1,5 @@
 <script>
-  const {
+  const { children,
     icon = "",
     imagem = "",
     altImagem = "",
@@ -43,7 +43,7 @@
         </div>
       </div>
     {:else}
-      <slot />
+      {@render children?.()}
       <div class="flex flex-col gap-3 items-center w-full">
         <div class="flex flex-col w-full gap-1">
           <h2 class="nlf-titulo-h2 text-azul-3">
@@ -79,6 +79,6 @@
         <p class="nlf-paragrafo">{@html descricao}</p>
       </div>
     </div>
-    <slot />
+    {@render children?.()}
   {/if}
 </div>

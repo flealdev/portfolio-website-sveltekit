@@ -1,6 +1,5 @@
 <script>
-  import Topbar from "$lib/components/molecules/topbar/topbar.svelte";
-  import SecaoHeader_25anos from "../secao-header/--25anos/secao-header--25anos.svelte";
+  import Topbar from "$lib/components/organisms/secao-header/topbar/topbar.svelte";
     import CookiesConsent from "$lib/components/molecules/cookies-consent/cookies-consent.svelte";
   import SecaoHeader from "$lib/components/organisms/secao-header/secao-header.svelte";
   import SecaoRodape from "$lib/components/organisms/secao-rodape/secao-rodape.svelte";
@@ -28,7 +27,7 @@
   });
 </script>
 
-<SecaoHeader_25anos />
+<SecaoHeader />
 <main class="max-md:pt-5 md:pt-10 pb-20 nlf-container">
   {@render children?.()}
 

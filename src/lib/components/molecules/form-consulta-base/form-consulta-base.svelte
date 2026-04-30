@@ -3,7 +3,8 @@
   import { superForm } from "sveltekit-superforms/client";
   import { page } from "$app/state";
 
-  export let formData = {};
+  /** @type {{formData?: any}} */
+  let { formData = {} } = $props();
 
   const { form, errors, enhance, message } = superForm(formData, {
     taintedMessage:

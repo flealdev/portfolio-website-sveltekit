@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-    let incidenteAtivo = false
+    let incidenteAtivo = $state(false)
 
   onMount(async ()=>{
     const res = await fetch("/api/v2/consulta-notif-parada-ativa?key=dBPFQ0kRNM57KveDXvvEbGY2byC8Zu09wI0")

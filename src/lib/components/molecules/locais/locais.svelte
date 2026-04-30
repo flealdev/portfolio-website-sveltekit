@@ -13,7 +13,7 @@
       class="rounded-3xl shadow-md w-full h-75 mt-2"
       title="New Life Fibra São Gabriel"
       aria-label="New Life Fibra São Gabriel"
-    />
+></iframe>
   </div>
   <div
     class="flex flex-col md:items-center gap-1 max-md:w-full md:max-w-120"
@@ -29,7 +29,7 @@
       marginheight="0"
       marginwidth="0"
       class="rounded-3xl shadow-md w-full h-75 mt-2"
-    />
+></iframe>
   </div>
   <div
     class="flex flex-col md:items-center gap-1 max-md:w-full md:max-w-120"
@@ -45,6 +45,6 @@
       marginheight="0"
       marginwidth="0"
       class="rounded-3xl shadow-md w-full h-75 mt-2"
-    />
+></iframe>
   </div>
 </div>

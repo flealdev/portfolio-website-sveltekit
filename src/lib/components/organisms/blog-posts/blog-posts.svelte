@@ -5,12 +5,12 @@
   import { fetchPostsApiWordpress } from "$lib/core/models/fetch";
 
   // Implementação de GraphQL com paginação por cursor e bloco await na marcação
-  let variables = `{
+  let variables = $state(`{
         "first": 6,
         "after": null,
         "last": null,
         "before": null
-    }`;
+    }`);
   //   const res = await fetchPostsApiWordpress(variables, query, endpointApi);
   //   return res
   // };

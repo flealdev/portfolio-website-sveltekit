@@ -1,11 +1,11 @@
 <script>
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 </script>
 
 <ul
   class="flex w-full flex-wrap justify-center max-md:gap-x-10 max-md:gap-y-5 md:gap-10 nlf-container nlf-paragrafo nlf-container-filho"
 >
-  {#if !($page.url.pathname === "/contato")}
+  {#if !(page.url.pathname === "/contato")}
     <li class="">
       <a
         href="/contato"
@@ -14,7 +14,7 @@
       >
     </li>
   {/if}
-  {#if !($page.url.pathname === "/planos")}
+  {#if !(page.url.pathname === "/planos")}
     <li class="">
       <a
         href="/planos"

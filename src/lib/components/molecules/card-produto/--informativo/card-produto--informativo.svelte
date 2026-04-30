@@ -1,5 +1,7 @@
 <script>
-  export let etiqueta = "",
+  /** @type {{etiqueta?: string, plano?: string, classes?: string, classesContainerIcones?: string, destaque?: boolean, icones?: any, link?: string, textoLink?: string, googleAds?: boolean, href?: string, classesBotao?: string}} */
+  let {
+    etiqueta = "",
     plano = "",
     classes = "",
     classesContainerIcones = "",
@@ -9,9 +11,10 @@
     textoLink = "",
     googleAds = false,
     href = "",
-    classesBotao = "";
+    classesBotao = ""
+  } = $props();
 
-  let estiloCard = "";
+  let estiloCard = $state("");
   if (destaque) {
     estiloCard =
       "bg-principal-primeira border-2 border-principal-segunda shadow-[0_0_1rem_#FFE404]";

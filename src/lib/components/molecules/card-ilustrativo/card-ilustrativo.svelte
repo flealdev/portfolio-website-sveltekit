@@ -1,5 +1,5 @@
 <script>
-  let {
+  let { children,
     titulo = "",
     conteudo = "",
     icone = "",
@@ -24,7 +24,7 @@
 >
   <div class="flex items-center justify-center">
     {#if svg === "sim"}
-      <slot />
+      {@render children?.()}
     {:else}
       <img src={icone} alt="Ícone decorativo" />
     {/if}

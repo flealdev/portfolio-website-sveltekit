@@ -1,12 +1,12 @@
 <script>
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import FormConsultaViabilidade from "$lib/components/molecules/form-consulta-viabilidade/form-consulta-viabilidade.svelte";
   import LayoutModal from "../layout-modal/layout-modal.svelte";
 
   let { display = "" } = $props();
 
   $effect(() => {
-    if ($page.url.pathname === "/obrigado") {
+    if (page.url.pathname === "/obrigado") {
       hide();
     }
   });

@@ -7,7 +7,7 @@
     return data;
   };
 
-  $: getIP = ip();
+  let getIP = $derived(ip());
 </script>
 
 <div

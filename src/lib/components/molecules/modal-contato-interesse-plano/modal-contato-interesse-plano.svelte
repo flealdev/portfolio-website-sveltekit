@@ -1,6 +1,6 @@
 <script>
   import FormInteressePlano from "$lib/components/molecules/form-interesse-plano/form-interesse-plano.svelte";
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import LayoutModal from "../layout-modal/layout-modal.svelte";
 
   const {
@@ -14,7 +14,7 @@
   // exclui os espaços no nome dos planos para ser o ID do modal
 
   $effect(() => {
-    if ($page.url.pathname === "/obrigado") {
+    if (page.url.pathname === "/obrigado") {
       hide();
     }
   });

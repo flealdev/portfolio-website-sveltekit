@@ -74,7 +74,7 @@
         class="nlf-input-textarea"
         placeholder="Digite a sua proposta de parceria"
         required
-      />
+></textarea>
     </label>
     <label class="nlf-input-file--field w-full flex-col px-5 text-center gap-3">
       <span
