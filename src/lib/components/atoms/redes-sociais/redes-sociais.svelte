@@ -9,37 +9,37 @@
 >
     <a
             target="_blank"
-            href="https://www.facebook.com/"
+            href="/"
             aria-label="Acesse o Facebook">facebook</a
     >
     <span class="text-auxiliar-quinta font-black text-xs">/</span>
     <a
             target="_blank"
-            href="https://www.instagram.com/"
+            href="/"
             aria-label="Acesse o Instagram">instagram</a
     >
     <span class="text-auxiliar-quinta font-black text-xs">/</span>
     <a
             target="_blank"
-            href="https://x.com"
+            href="/"
             aria-label="Acesse o X/Twitter">x</a
     >
     <span class="text-auxiliar-quinta font-black text-xs">/</span>
     <a
             target="_blank"
-            href="https://www.tiktok.com"
+            href="/"
             aria-label="Acesse o TikTok">tiktok</a
     >
     <span class="text-auxiliar-quinta font-black text-xs">/</span>
     <a
             target="_blank"
-            href="https://www.youtube.com/"
+            href="/"
             aria-label="Acesse o Youtube">youtube</a
     >
     <span class="text-auxiliar-quinta font-black text-xs">/</span>
     <a
             target="_blank"
-            href="https://wa.me/55549999999"
+            href="/"
             aria-label="Acesse o Whatsapp">whatsapp</a
     >
 </p>
