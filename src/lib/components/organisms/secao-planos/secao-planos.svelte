@@ -8,34 +8,42 @@
   const googleAds = $derived.by(
     () => page.url.searchParams.get("utm_source") || null
   );
+
+  const planos = [
+    {
+      eDestaque: true,
+      titulo: "2000 MEGA!",
+      descricao: "Ideal para jogos online e uso pesado!",
+      valor: "300,00",
+    },
+    {
+      eDestaque: false,
+      titulo: "200 MEGA!",
+      descricao: "Ideal para streaming e para grandes famílias!",
+    valor: "150,00"
+    },
+    {
+      eDestaque: false,
+      titulo: "300 MEGA!",
+      descricao: "Ideal para home office!",
+      valor: "125,00"
+    },
+  ]
 </script>
 
 <div
-  class="flex w-full max-w-[80rem] flex-col items-center gap-[100px] pt-[90px] pb-[60px] max-lg:px-5 lg:px-[60px] bg-[url(/assets/25anos/parabolic-pentagon-w600.webp)] bg-cover bg-center bg-no-repeat shadow-container rounded-[10px]"
+  class="flex w-full max-w-[80rem] border-preto/60 border-2 flex-col items-center gap-[100px] pt-[90px] pb-[60px] max-lg:px-5 lg:px-[60px] bg-branco bg-cover bg-center bg-no-repeat shadow-container rounded-[10px]"
 >
-  {#await fetchPlanosMensais()}
     <div
       class="flex flex-wrap items-center justify-center gap-x-[20px] gap-y-[80px]"
     >
-      <CardProdutoPlaceholderImpactante/>
-      <CardProdutoPlaceholderImpactante/>
-      <CardProdutoPlaceholderImpactante/>
-    </div>
-  {:then res}
-    <div
-      class="flex flex-wrap items-center justify-center gap-x-[20px] gap-y-[80px]"
-    >
-      {#each res as plano}
+      {#each planos as plano}
         <CardProdutoImpactante
-          eDestaque={plano.destaque}
-          titulo={`${plano.velocidade} MEGA!`}
-          descricao={plano.descricao}
-          valor={plano.preco}
-          mensagem={`Olá! Vim do ${googleAds ? "Google Ads" : "site"} e gostaria de atendimento comercial, plano de ${plano.velocidade} MEGA. [NÃO EXCLUA]`}
+            {googleAds}
+            {...plano}
         />
       {/each}
     </div>
-  {/await}
   <BotaoLink
     eDestaque={true}
     novaGuia={true}

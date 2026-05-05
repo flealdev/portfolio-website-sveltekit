@@ -1,16 +1,12 @@
 <script>
-  import FormContatoWpp from "$lib/components/molecules/form-contato/--wpp/form-contato--wpp.svelte";
-  import SliderImg from "$lib/components/molecules/slider-img/slider-img.svelte";
-  import SecaoCciVisiteInsta from "$lib/components/organisms/secao-cci/--visite-insta/secao-cci--visite-insta.svelte";
+    import SecaoCciVisiteInsta from "$lib/components/organisms/secao-cci/--visite-insta/secao-cci--visite-insta.svelte";
   import SecaoGoogle from "$lib/components/organisms/secao-google/secao-google.svelte";
-  import SecaoHero_25anos from "$lib/components/organisms/secao-hero/--25anos/secao-hero--25anos.svelte";
+  import SecaoHero from "$lib/components/organisms/secao-hero/secao-hero.svelte";
   import SecaoIndique from "$lib/components/organisms/secao-indique/secao-indique.svelte";
   import SecaoParaSuaEmpresa from "$lib/components/organisms/secao-para-sua-empresa/secao-para-sua-empresa.svelte";
   import SecaoPlanos from "$lib/components/organisms/secao-planos/secao-planos.svelte";
-  import SecaoPromocionalComBotao from "$lib/components/organisms/secao-promocional/--com-botao/secao-promocional--com-botao.svelte";
   import SecaoSaibaMais from "$lib/components/organisms/secao-saiba-mais/secao-saiba-mais.svelte";
   import SecaoVantagens from "$lib/components/organisms/secao-vantagens/secao-vantagens.svelte";
-
   import SecaoPremios from "$lib/components/organisms/secao-premios/secao-premios.svelte";
   import SecaoProjetos from "$lib/components/organisms/secao-projetos/secao-projetos.svelte";
   import SecaoApp from "$lib/components/organisms/secao-app/secao-app.svelte";
@@ -20,7 +16,6 @@
   import ModalDuvidasFrequentes from "$lib/components/molecules/modal-duvidas-frequentes/modal-duvidas-frequentes.svelte";
   import Secao_25anos from "$lib/components/organisms/secao-25anos/secao-25anos.svelte";
   import SecaoVisiteInsta from "$lib/components/organisms/secao-visite-insta/secao-visite-insta.svelte";
-  import { fetchBannersDoMes } from "$lib/core/models/fetch";
 
   const duvidas = [
     {
@@ -188,8 +183,7 @@
 
 <div class="flex flex-col items-center gap-[100px] w-full">
   <div class="flex flex-col items-center gap-[100px] nlf-padding w-full">
-    <SecaoHero_25anos />
-    <Secao_25anos class="max-lg:flex lg:hidden" />
+    <SecaoHero />
     <SecaoPlanos />
     <div class="flex flex-wrap items-center justify-center w-full gap-[100px]">
       <SecaoVantagens />

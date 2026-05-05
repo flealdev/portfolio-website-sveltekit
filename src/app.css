@@ -42,17 +42,17 @@
   --color-vermelho: red;
   --color-background: #fefeff;
 
-  --shadow-container: 0 0 10px rgba(22, 56, 203, 0.5);
+  --shadow-container: 0 0 10px rgba(0,0,0, 0.2); /*manter*/
   --shadow-container--vermelho: 0 0 10px 2px rgb(255, 0, 0, 1);
   --shadow-container--ouro: 0 0 10px 2px gold;
 
-  --color-principal-primeira: #1638cb;
-  --color-principal-primeira-dark: #0099ff;
-  --color-principal-segunda: #ffe400;
-  --color-principal-segunda-dark: #ccb800;
-  --color-principal-terceira: #0cbe42;
-  --color-principal-terceira-dark: #339952;
-  --color-auxiliar-primeira: #617ef6;
+  --color-principal-primeira: #021587;
+  --color-principal-primeira-dark: #4984ac;
+  --color-principal-segunda: #706700;
+  --color-principal-segunda-dark: #594f00;
+  --color-principal-terceira: #7bffa3;
+  --color-principal-terceira-dark: #00ff4d;
+  --color-auxiliar-primeira: #344aa8;
   --color-auxiliar-segunda: #f8f9ff;
   --color-auxiliar-terceira: #8b9be5;
   --color-auxiliar-terceira30: #dce2f7ff;
@@ -67,12 +67,12 @@
   --color-azul-1-claro: #D1D9FA;
   --color-azul-2: #A3B2F5;
   --color-azul-3: #617EF7;
-  --color-azul-4-principal: #1638CB;
+  --color-azul-4-principal: #001e88;
   --color-azul-5-escuro: #0A1B61;
   --color-verde-1-claro: #CCFFDE;
   --color-verde-2: #99FFBD;
   --color-verde-3: #4DFF8C;
-  --color-verde-4-principal: #00C947;
+  --color-verde-4-principal: #33884e;
   --color-verde-5-escuro: #006624;
   --color-amarelo-1-claro: #FFFACC;
   --color-amarelo-2: #FFF499;
@@ -83,17 +83,17 @@
   --color-roxo-1-claro: #DCD8F2;
   --color-roxo-2: #B9B2E6;
   --color-roxo-3: #8577D4;
-  --color-roxo-4-principal: #503DC2;
+  --color-roxo-4-principal: #8f7eff;
   --color-roxo-5-escuro: #302475;
   --color-laranja-1-claro: #FFEDCC;
   --color-laranja-2: #FFDB99;
   --color-laranja-3: #FFC04D;
-  --color-laranja-4-principal: #FFA500;
+  --color-laranja-4-principal: #ffd07c;
   --color-laranja-5-escuro: #996300;
   --color-vermelho-1-claro: #FFCCCC;
   --color-vermelho-2: #FF9999;
   --color-vermelho-3: #FF4D4D;
-  --color-vermelho-4-principal: #FF0000;
+  --color-vermelho-4-principal: #aa3939;
   --color-vermelho-5-escuro: #990000;
 
   --font-*: initial;

@@ -1,8 +1,7 @@
 <script>
   import BotaoDestaqueWpp from "$lib/components/atoms/botao/--destaque-wpp/botao--destaque-wpp.svelte";
-  import BotaoWpp from "$lib/components/atoms/botao/--wpp/botao--wpp.svelte";
 
-  let { eDestaque = false, titulo, descricao, valor, mensagem} = $props();
+  let { eDestaque = false, titulo, descricao, valor, googleAds=false} = $props();
 </script>
 
 <div
@@ -14,13 +13,12 @@
   <p class="nlf-paragrafo">{@html descricao}</p>
   <p class="text-[22px] font-black">R$ {valor}</p>
 
-  <!-- <BotaoWpp titulo="Saiba mais"/> -->
   <BotaoDestaqueWpp
     titulo="Saiba mais"
     corTexto="text-azul-4-principal"
     corIcone="fill-azul-4-principal"
     {eDestaque}
-    {mensagem}
+    mensagem={`Olá! Vim do ${googleAds ? "Google Ads" : "site"} e gostaria de atendimento comercial, plano de ${titulo}. [NÃO EXCLUA]`}
     classes="max-w-[200px] absolute -bottom-[20px]"
   />
 </div>

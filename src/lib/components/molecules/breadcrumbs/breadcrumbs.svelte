@@ -32,14 +32,14 @@
             cy="200"
             fill="none"
             r="24"
-            stroke="#8B9BE5"
+            stroke="black"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="16"
           /><path
             d="M72,56h96a32,32,0,0,1,0,64H72a40,40,0,0,0,0,80H176"
             fill="none"
-            stroke="#8B9BE5"
+            stroke="black"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="16"
@@ -48,7 +48,7 @@
         {#each crumbs as c, i}
           {#if i == crumbs.length - 1}
             <li
-              class="border-2 text-auxiliar-terceira dark:text-auxiliar-terceira30 border-auxiliar-terceira30 rounded-lg px-3 py-1"
+              class="border-2 border-preto/30 rounded-lg px-3 py-1"
             >
               {c.label.replace(/-/g, " ").length > 30
                 ? c.label.replace(/-/g, " ").substring(0, 30) + "..."
@@ -58,14 +58,14 @@
             <li class="">
               <a
                 href={c.href}
-                class="border-2 bg-auxiliar-terceira text-branco border-auxiliar-terceira30 rounded-lg px-3 py-1"
+                class="border-2 bg-preto/20 text-branco border-preto/30 rounded-lg px-3 py-1"
                 >{c.label.replace(/-/g, " ").length > 30
                   ? c.label.replace(/-/g, " ").substring(0, 30) + "..."
                   : c.label.replace(/-/g, " ")}</a
               >
             </li>
             <hr
-              class="bg-auxiliar-terceira30 border-0 w-[5px] h-[20px] rounded-lg rotate-15"
+              class="bg-preto/20 border-0 w-[5px] h-[20px] rounded-lg rotate-15"
             />
           {/if}
         {/each}

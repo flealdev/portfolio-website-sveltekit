@@ -1,45 +1,62 @@
 <script>
-  import Botao from "$lib/components/atoms/botao/botao.svelte";
-  import {content} from '/state.svelte.js';
+    import Botao from "$lib/components/atoms/botao/botao.svelte";
 
-  const {padding = "max-sm:px-5", classes, bgCor} = $props()
+    const {padding = "max-sm:px-5", classes = "border-b-1 border-preto/60", bgCor = "bg-branco"} = $props()
 </script>
 
 <div
-  class="flex flex-wrap max-sm:justify-between sm:max-lg:gap-5 lg:gap-[40px] sm:justify-center w-full {bgCor} {padding} {classes}"
+        class="flex flex-wrap max-sm:justify-between sm:max-lg:gap-5 lg:gap-[40px] sm:justify-center w-full {bgCor} {padding} {classes}"
 >
-  <Botao
-    padding={false}
-    titulo={content.section1[0].title}
-    href={content.section1[0].href}
-    textCor="text-branco"
-    tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold"
-  >
-    {@html content.section1[0].iconSvg}
-  </Botao>
-  <Botao
-    padding={false}
-    titulo={content.section1[1].title}
-    tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold"
-    href={content.section1[1].href}
-    textCor="text-branco"
-  >
-    <div
-      class="max-md:w-[19px] md:w-[25px] aspect-square rounded-full flex justify-center items-center bg-branco"
+    <Botao
+            padding={false}
+            titulo="Velocímetro"
+            href="/apps/velocimetro"
+            tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold"
     >
-      {@html content.section1[1].iconSvg}
-    </div>
-  </Botao>
+        <svg viewBox="0 0 24 25" fill="none" class="aspect-24/25 max-md:w-[20px] md:w-[25px]">
+            <rect y="0.783203" width="24" height="24" rx="12" fill="white"></rect>
+            <path d="M11.0054 12.7835C11.0054 13.3907 11.4981 13.8831 12.105 13.8831C12.5314 13.8831 12.8968 13.638 13.0793 13.2834L13.0823 13.2861L15.0897 9.66455L11.5657 11.8255L11.569 11.8288C11.2344 12.0177 11.0054 12.372 11.0054 12.7835Z"
+                  fill="black"></path>
+            <path d="M16.5349 7.54407C15.4081 6.55924 13.9522 5.93042 12.2887 5.83643V7.50748C13.675 7.59564 14.4918 8.03593 15.3119 8.72299L16.5349 7.54407Z"
+                  fill="black"></path>
+            <path d="M17.3201 12.2629H18.9892C18.8772 10.5993 18.2265 9.23244 17.2162 8.1123L16.0353 9.28595C16.7468 10.1011 17.2148 11.1539 17.3201 12.2629Z"
+                  fill="black"></path>
+            <path d="M17.3278 13.0948C17.1512 15.8674 14.8541 18.0663 12.0482 18.0663C9.1273 18.0663 6.66356 15.6974 6.66356 12.7767C6.66356 9.99638 8.96178 7.72145 11.4571 7.50796V5.83691C7.85273 6.0529 5 9.08558 5 12.784C5 16.6221 8.16632 19.7299 12.0044 19.7299C15.7286 19.7299 18.8223 16.6992 19 13.0948H17.3278Z"
+                  fill="black"></path>
+        </svg>
+    </Botao>
+    <Botao
+            padding={false}
+            titulo="Fale conosco"
+            tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold"
+            href="/contato"
+    >
+        <div
+                class="max-md:w-[19px] md:w-[25px] aspect-square rounded-full flex justify-center items-center bg-branco"
+        >
+            <svg enable-background="new 0 0 139 139" version="1.1" viewBox="0 0 139 139"
+                 class="fill-black max-md:w-[10px] md:w-[15px]">
+                <path d="M67.317,81.952c-9.284-7.634-15.483-17.054-18.742-22.414l-2.431-4.583c0.85-0.912,7.332-7.853,10.141-11.619  c3.53-4.729-1.588-9-1.588-9S40.296,19.933,37.014,17.076c-3.282-2.861-7.06-1.272-7.06-1.272  c-6.898,4.457-14.049,8.332-14.478,26.968C15.46,60.22,28.705,78.216,43.028,92.148c14.346,15.734,34.043,31.504,53.086,31.486  c18.634-0.425,22.508-7.575,26.965-14.473c0,0,1.59-3.775-1.268-7.06c-2.86-3.284-17.265-17.688-17.265-17.688  s-4.268-5.119-8.998-1.586c-3.525,2.635-9.855,8.496-11.38,9.917C84.171,92.749,73.582,87.104,67.317,81.952z"></path>
+            </svg>
+        </div>
+    </Botao>
 
-  <Botao
-    padding={false}
-    titulo={content.section1[2].title}
-    target="_blank"
-    tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold font-bold"
-    href={content.section1[2].href}
-    textCor="text-branco"
-    class=" bg-verde-4-principal max-md:px-[10px] md:px-[15px] max-md:py-[5px] md:py-[7px] rounded-[5px]"
-  >
-    {@html content.section1[2].iconSvg}
-  </Botao>
+    <Botao
+            padding={false}
+            titulo="Whatsapp"
+            target="_blank"
+            tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold font-bold"
+            href="/"
+            textCor="text-branco"
+            class=" bg-verde-4-principal max-md:px-[10px] md:px-[15px] max-md:py-[5px] md:py-[7px] rounded-[5px]"
+    >
+        <svg viewBox="0 0 10 11" fill="none" class="max-md:w-[15px] md:w-[20px]">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.54301 2.23667C7.60294 1.30003 6.35281 0.78399 5.02087 0.783447C2.27648 0.783447 0.0428277 3.00624 0.0417565 5.73836C0.0413724 6.61174 0.270649 7.4642 0.706384 8.21567L0 10.7834L2.63949 10.0944C3.36674 10.4891 4.18556 10.6972 5.01889 10.6975H5.02091C7.76502 10.6975 9.99885 8.4745 10 5.74232C10.0005 4.41825 9.48306 3.17327 8.54301 2.23667ZM5.02089 9.86065H5.01921C4.27665 9.86036 3.54829 9.66179 2.91289 9.28655L2.76179 9.1973L1.19548 9.60619L1.61357 8.08637L1.51516 7.93052C1.10091 7.27478 0.882122 6.51686 0.882445 5.73864C0.883334 3.46781 2.73986 1.62036 5.02257 1.62036C6.12792 1.6207 7.167 2.04969 7.94835 2.82819C8.72968 3.60669 9.15974 4.64149 9.15929 5.74198C9.15836 8.01299 7.30189 9.86065 5.02089 9.86065Z"
+                  fill="white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.2909 6.776C7.1665 6.71402 6.55482 6.41454 6.44079 6.37318C6.32676 6.33186 6.24381 6.31121 6.16089 6.43515C6.07796 6.55908 5.83953 6.83799 5.76695 6.92064C5.69439 7.00323 5.62179 7.01363 5.49741 6.9516C5.37301 6.88963 4.97214 6.7589 4.49695 6.33707C4.12708 6.00874 3.87741 5.60331 3.80482 5.47932C3.73226 5.3554 3.79709 5.28839 3.85939 5.22664C3.91535 5.17115 3.98381 5.08204 4.04602 5.00973C4.10821 4.93745 4.12894 4.88576 4.17042 4.80319C4.21189 4.72054 4.19117 4.64822 4.16005 4.58627C4.12894 4.5243 3.88014 3.91486 3.77648 3.66691C3.67546 3.42551 3.57291 3.45822 3.49653 3.45438C3.42408 3.45078 3.34103 3.45003 3.2581 3.45003C3.17517 3.45003 3.04036 3.48103 2.92635 3.60496C2.81232 3.72892 2.4909 4.02849 2.4909 4.63787C2.4909 5.24732 2.9367 5.83608 2.99891 5.91869C3.0611 6.00136 3.87618 7.25193 5.12419 7.78825C5.42101 7.91584 5.65275 7.99201 5.83342 8.04906C6.13146 8.14331 6.40267 8.13 6.61703 8.09812C6.85607 8.06257 7.35311 7.79861 7.45677 7.50942C7.56046 7.22017 7.56046 6.97224 7.52933 6.92062C7.49825 6.86899 7.4153 6.83799 7.2909 6.776Z"
+                  fill="white"></path>
+        </svg>
+    </Botao>
 </div>

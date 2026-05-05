@@ -23,7 +23,7 @@
 <LayoutModal {id} {display} border={true} fechar={false}>
     <div class="flex flex-col gap-[30px]">
         <div
-                class="text-principal-primeira dark:text-branco flex justify-between items-center"
+                class="flex justify-between items-center"
         >
             <p class="nlf-enfase font-black">Menu</p>
             <button
@@ -32,7 +32,7 @@
             ><span>Fechar</span>
                 <svg width="20" height="16" viewBox="0 0 20 16">
                     <path
-                            class="fill-principal-primeira dark:fill-branco"
+                            class="fill-preto"
                             d="M13.7898 0.749956L19.4886 6.71586C19.8295 7.04541 20 7.49427 20 7.98859C20 8.48291 19.8295 8.92609 19.4886 9.26132L13.7898 15.25C13.1136 15.9602 12.0114 15.9602 11.3352 15.25C10.6591 14.5397 10.6591 13.392 11.3352 12.6818L14.0739 9.81814H1.74432C0.778409 9.81814 0 9.00564 0 7.99996C0 6.99427 0.778409 6.18177 1.73864 6.18177H14.0682L11.3295 3.31814C10.6534 2.60791 10.6534 1.46018 11.3295 0.749956C12.0114 0.0397283 13.108 0.0397283 13.7898 0.749956Z"
                     />
                 </svg>
@@ -42,28 +42,25 @@
             <div
                     class="flex flex-wrap w-full max-xs:gap-[5px] max-xs:justify-around xs:gap-5 xs:justify-center"
             >
-                <button
+                <a
                         class="nlf-botao-compacto nlf-botao--gold max-xs:max-w-full flex gap-[5px]"
-                        onclick={() => {
-            manipulaModal("modal-lojas-app", ModalLojasApp);
-          }}
+                        href="/"
                 >
                     <svg
                             width="21"
                             height="21"
                             viewBox="0 0 21 21"
-                            class="fill-principal-primeira"
+                            class="fill-preto"
                     >
                         <path
                                 d="M9.06957 12.5856C9.06957 12.2515 9.12691 11.9309 9.23216 11.6329H2.64213C1.45906 11.6329 0.5 12.5921 0.5 13.7751V14.6514C0.5 15.1964 0.669932 15.7277 0.986146 16.1715C2.45511 18.2331 4.85832 19.2544 8.11692 19.2544C8.49557 19.2544 8.86277 19.2406 9.21826 19.2129C9.12186 18.9265 9.06957 18.6198 9.06957 18.3008V12.5856ZM8.11692 0.207031C10.7473 0.207031 12.8796 2.33935 12.8796 4.96971C12.8796 7.60006 10.7473 9.73235 8.11692 9.73235C5.48655 9.73235 3.35424 7.60006 3.35424 4.96971C3.35424 2.33935 5.48655 0.207031 8.11692 0.207031ZM10.0221 12.5856C10.0221 11.5334 10.875 10.6805 11.9272 10.6805H18.5949C19.6471 10.6805 20.5 11.5334 20.5 12.5856V18.3008C20.5 19.353 19.6471 20.2059 18.5949 20.2059H11.9272C10.875 20.2059 10.0221 19.353 10.0221 18.3008V12.5856ZM12.4034 13.5381C12.1404 13.5381 11.9272 13.7514 11.9272 14.0144C11.9272 14.2774 12.1404 14.4907 12.4034 14.4907H18.1187C18.3817 14.4907 18.5949 14.2774 18.5949 14.0144C18.5949 13.7514 18.3817 13.5381 18.1187 13.5381H12.4034ZM12.4034 16.3957C12.1404 16.3957 11.9272 16.609 11.9272 16.872C11.9272 17.135 12.1404 17.3483 12.4034 17.3483H18.1187C18.3817 17.3483 18.5949 17.135 18.5949 16.872C18.5949 16.609 18.3817 16.3957 18.1187 16.3957H12.4034Z"
                         />
                     </svg>
                     <span class="text-preto">Área do cliente</span>
-                </button
-                >
+                </a>
                 <a
                         href="/avalie"
-                        class="nlf-botao-compacto nlf-botao--azul max-xs:max-w-full flex gap-[5px]"
+                        class="nlf-botao-compacto bg-preto/40 max-xs:max-w-full text-branco flex gap-[5px]"
                         onclick={() => hideModalFlexHidden(id)}
                 >
                     <svg
@@ -97,7 +94,7 @@
                         onclick={() => hideModalFlexHidden(id)}
                 >
                     <div
-                            class="bg-principal-primeira rounded-full w-[24px] aspect-square flex items-center justify-center"
+                            class="bg-preto/40 rounded-full w-[24px] aspect-square flex items-center justify-center"
                     >
                         <svg width="16" height="14" viewBox="0 0 16 14">
                             <path
@@ -114,7 +111,7 @@
                         href="/quem-somos"
                 >
                     <div
-                            class="bg-principal-primeira rounded-full w-[24px] aspect-square flex items-center justify-center"
+                            class="bg-preto/40 rounded-full w-[24px] aspect-square flex items-center justify-center"
                     >
                         <svg
                                 width="8"
@@ -141,7 +138,7 @@
                         href="/premios"
                 >
                     <div
-                            class="bg-principal-primeira rounded-full w-[24px] aspect-square flex items-center justify-center"
+                            class="bg-preto/40 rounded-full w-[24px] aspect-square flex items-center justify-center"
                     >
                         <svg
                                 width="10"
@@ -160,18 +157,18 @@
             </div>
         </div>
         <div class="flex flex-col items-end gap-[15px] w-full">
-            <h3 class="text-lg font-light text-principal-primeira dark:text-branco">
+            <h3 class="text-lg font-light ">
                 Contato
             </h3>
             <div class="flex flex-wrap justify-end gap-x-5 gap-y-[10px] items-center">
                 <Botao
-                        titulo="(54) 3310-1008"
-                        href="tel:05433101008"
+                        titulo="(54) 9999-9999"
+                        href="tel:05499999999"
                         padding={false}
                         onclick={() => hideModalFlexHidden(id)}
                 >
                     <div
-                            class="bg-principal-primeira rounded-full w-[24px] aspect-square flex items-center justify-center"
+                            class="bg-preto/40 rounded-full w-[24px] aspect-square flex items-center justify-center"
                     >
                         <svg
                                 width="12"
@@ -188,13 +185,13 @@
                     </div>
                 </Botao>
                 <Botao
-                        href="mailto:contato@newlifefibra.com.br"
-                        titulo="contato@newlifefibra.com.br"
+                        href="mailto:contato@empresa.com.br"
+                        titulo="contato@empresa.com.br"
                         padding={false}
                         onclick={() => hideModalFlexHidden(id)}
                 >
                     <div
-                            class="bg-principal-primeira rounded-full w-[24px] aspect-square flex items-center justify-center"
+                            class="bg-preto/40 rounded-full w-[24px] aspect-square flex items-center justify-center"
                     >
                         <svg
                                 width="14"

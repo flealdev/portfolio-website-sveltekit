@@ -29,11 +29,11 @@
   <div
     class="{fullscreen
       ? 'max-md:w-full max-md:h-full lg:rounded-2xl'
-      : 'landscape:max-md:h-full landscape:max-md:w-full landscape:max-md:rounded-none rounded-2xl max-md:w-[90%]'}  md:w-[60%] z-20000 {padding} flex flex-col gap-5 justify-start items-center bg-branco dark:bg-dark overflow-auto {border ? 'border-5 border-azul-1-claro' : ''} {overflowY ? 'max-h-[600px] overflow-y-auto' : ''} {classesContainer}"
+      : 'landscape:max-md:h-full landscape:max-md:w-full landscape:max-md:rounded-none rounded-2xl max-md:w-[90%]'}  md:w-[60%] z-20000 {padding} flex flex-col gap-5 justify-start items-center bg-branco dark:bg-dark overflow-auto {border ? 'border-5 border-preto/20' : ''} {overflowY ? 'max-h-[600px] overflow-y-auto' : ''} {classesContainer}"
   >
     {#if fechar}
     <button
-      class="font-extrabold text-3xl leading-xs text-principal-primeira dark:text-branco self-end"
+      class="font-extrabold text-3xl leading-xs self-end"
       onclick={() => hideModalFlexHidden(id)}>X</button
     >
     {/if}

@@ -28,13 +28,7 @@
     });
   });
 
-  // if (browser) {
-  //   if (tema.padrao === "dark") {
-  //     document.documentElement.classList.add("dark");
-  //   } else {
-  //     document.documentElement.classList.remove("dark");
-  //   }
-  // }
+
 </script>
 
 <svelte:head>

@@ -6,18 +6,18 @@
 
 <div class="flex w-full max-w-[30rem]">
   <div
-    class="flex flex-col w-full gap-[30px] py-[40px] px-5 bg-[url(/assets/25anos/bg-secao-empresa-w600.webp)] bg-cover bg-center bg-no-repeat shadow-container rounded-[10px] text-branco"
+    class="flex flex-col w-full max-md:gap-[30px] py-[40px]  px-5 bg-branco border-2 border-preto/60 bg-cover shadow-container rounded-[10px]"
   >
     <div class="flex flex-col md:flex-wrap gap-5">
-      <h2 class="nlf-titulo-h2 font-black">Para sua empresa</h2>
+      <h2 class="nlf-titulo-h2 font-black">Produtos especiais</h2>
       <img
-        src="/assets/img-tecnico-bruno_shuck.webp"
+        src="/assets/template/ilustrativa-1.jpg"
         alt=""
         class="w-full max-w-[200px] rounded-[10px]"
       />
       <div class="flex flex-col gap-[15px] nlf-paragrafo">
-        <p class="uppercase font-bold">Garanta:</p>
-        <ul class="flex flex-col gap-[10px]">
+        <p class="uppercase font-bold">Garantias e vantagens:</p>
+        <ul class="flex flex-col gap-[10px] justify-center">
           <li class="flex items-center gap-[10px]">
             <svg
               width="15"
@@ -30,8 +30,8 @@
             </svg>
             <p class="leading-[1.1]">
               <span class="font-bold"
-                >Suporte personalizado e especializado</span
-              > em empresas
+                >Garantia 1</span
+              > com diferencial
             </p>
           </li>
           <li class="flex items-center gap-[10px]">
@@ -46,8 +46,8 @@
             </svg>
             <p class="leading-[1.1]">
               <span class="font-bold"
-                >Conexão estável</span
-              > para grandes negócios
+                >Garantia 2</span
+              > com diferencial
             </p>
           </li>
           <li class="flex items-center gap-[10px]">
@@ -62,8 +62,8 @@
             </svg>
             <p class="leading-[1.1]">
               <span class="font-bold"
-                >Rede 100% personalizada</span
-              > para todos os setores
+              >Garantia 3</span
+              > com diferencial
             </p>
           </li>
         </ul>

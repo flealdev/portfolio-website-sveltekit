@@ -4,7 +4,7 @@
   // console.log(mensagem)
 </script>
 
-<a href="https://wa.me/555433101008?text={encodeURI(mensagem)}" target="_blank" class="nlf-grow w-full flex gap-[10px] items-center justify-center py-[10px] px-[20px] {eDestaque ? "bg-vermelho-4-principal" : "bg-ouro"} shadow-[-4px_4px_0_0_#1638CB] rounded-[10px] {classes}">
+<a href="https://wa.me/555499999999?text={encodeURI(mensagem)}" target="_blank" class="nlf-grow w-full flex gap-[10px] items-center justify-center py-[10px] px-[20px] {eDestaque ? "bg-vermelho-4-principal" : "bg-ouro"} shadow-[-4px_4px_0_0_#1638CB] rounded-[10px] {classes}">
   <span class="font-bold text-[20px] {eDestaque ? "text-branco" : "text-azul-4-principal"}">{titulo}</span>
   <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
     <path
