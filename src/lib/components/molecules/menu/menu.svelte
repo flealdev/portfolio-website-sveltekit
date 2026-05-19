@@ -75,20 +75,20 @@
   <div
     class="flex items-center flex-wrap justify-end max-lg:gap-[10px] lg:gap-[25px]"
   >
-    <MenuItem titulo="Planos" href="/planos" class="border-b- nlf-grow" />
-    <MenuItem titulo="Blog" href="/blog" class="nlf-grow" />
-    <MenuItem titulo="Contato" href="/contato" class="nlf-grow" />
-    <MenuItem titulo="Vagas" href="/trabalhe-conosco" class="nlf-grow" />
+    <MenuItem titulo="Planos" href="/" class="border-b- nlf-grow" />
+    <MenuItem titulo="Blog" href="/" class="nlf-grow" />
+    <MenuItem titulo="Contato" href="/" class="nlf-grow" />
+    <MenuItem titulo="Vagas" href="/" class="nlf-grow" />
     <MenuItem
       class="max-md:flex md:hidden nlf-grow"
       titulo="Indique"
-      href="/indique"
+      href="/"
       destaque={true}
     />
     <MenuItem
       class="max-md:hidden md:flex nlf-grow"
       titulo="Avalie"
-      href="/avalie"
+      href="/"
       destaque={true}
     />
   </div>

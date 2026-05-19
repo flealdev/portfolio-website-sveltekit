@@ -26,7 +26,7 @@
         <h1
           class="font-black max-sm:text-3xl sm:max-md:text-xl md:max-lg:text-3xl lg:max-3xl:text-[40px] 3xl:text-[55px] leading-sm"
         >
-          Provedor de internet
+         Sua empresa
         </h1>
       </div>
       <p class="nlf-paragrafo text-center">
