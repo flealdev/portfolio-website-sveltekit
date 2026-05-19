@@ -10,12 +10,13 @@
   import SecaoPremios from "$lib/components/organisms/secao-premios/secao-premios.svelte";
   import SecaoProjetos from "$lib/components/organisms/secao-projetos/secao-projetos.svelte";
   import SecaoApp from "$lib/components/organisms/secao-app/secao-app.svelte";
-  import SecaoInstitucional from "$lib/components/organisms/secao-institucional/secao-institucional.svelte";
+  import SecaoExpositiva from "$lib/components/organisms/secao-expositiva/secao-expositiva.svelte";
   import SecaoDuvidas from "$lib/components/organisms/secao-duvidas/secao-duvidas.svelte";
   import SecaoBlogRecentes from "$lib/components/organisms/secao-blog-recentes/secao-blog-recentes.svelte";
   import ModalDuvidasFrequentes from "$lib/components/molecules/modal-duvidas-frequentes/modal-duvidas-frequentes.svelte";
   import Secao_25anos from "$lib/components/organisms/secao-25anos/secao-25anos.svelte";
   import SecaoVisiteInsta from "$lib/components/organisms/secao-visite-insta/secao-visite-insta.svelte";
+    import SecaoColaboradores from "$lib/components/organisms/secao-colaboradores/secao-colaboradores.svelte";
 
   const duvidas = [
     {
@@ -197,7 +198,8 @@
     <SecaoPremios />
     <SecaoProjetos />
     <SecaoApp />
-    <SecaoInstitucional />
+    <SecaoExpositiva />
+    <SecaoColaboradores/>
     <div class="flex max-xl:flex-col xl:flex-wrap w-full items-center justify-center gap-[100px]">
       <SecaoBlogRecentes />
       <SecaoDuvidas {duvidas} />

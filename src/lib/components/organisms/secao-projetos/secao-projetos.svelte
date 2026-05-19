@@ -12,23 +12,23 @@
       class="flex flex-wrap justify-center w-full max-w-[60rem] max-md:gap-[20px] md:gap-[40px] items-center"
     >
       <CardProjetos
-        src="/assets/img-projetos.png"
-        alt="Imagem ilustrativa do projeto Praças Conectadas"
-        titulo="Projeto Praças Conectadas"
-        descricao="Wi-fi livre em conjunto com as prefeituras municipais."
-        frase="A New Life sempre com você!"
+        src="/assets/template/ilustrativa-pequena-horizontal.jpg"
+        alt="Imagem ilustrativa"
+        titulo="Produto 1"
+        descricao="Exponha dados dos principais produtos"
+        frase="Frase em destaque!"
       />
       <CardProjetos
-        src="/assets/imagem-card-ftta.webp"
-        alt="Imagem ilustrativa do projeto de estruturação FTTA"
-        titulo="Estruturação Avançada FTTA"
-        descricao="Seu prédio com conexão fibra óptica em cada apartamento."
-        frase="Mais velocidade e estabilidade!"
+        src="/assets/template/ilustrativa-pequena-horizontal.jpg"
+        alt="Imagem ilustrativa"
+        titulo="Produto 2"
+        descricao="Exponha dados dos principais produtos"
+        frase="Frase em destaque!"
       />
     </div>
     <BotaoCta
-      titulo="Serviços e projetos"
-      href="/servicos"
+      titulo="Saiba mais"
+      href="/"
       containerClasses="max-md:w-full"
     />
   </div>

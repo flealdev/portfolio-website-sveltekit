@@ -5,7 +5,7 @@
 <div
   class="flex flex-col items-center w-full max-w-[25rem] justify-center gap-[10px]"
 >
-  <img {src} {alt} />
+  <img {src} {alt} class="max-w-[300px]" />
   <div
     class="flex flex-col gap-[10px] text-preto bg-auxiliar-segunda p-[20px] border-b-[5px] border-principal-primeira rounded-md"
   >

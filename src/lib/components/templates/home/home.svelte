@@ -5,7 +5,7 @@
   import SecaoPremios from "$lib/components/organisms/secao-premios/secao-premios.svelte";
   import SecaoProjetos from "$lib/components/organisms/secao-projetos/secao-projetos.svelte";
   import SecaoApp from "$lib/components/organisms/secao-app/secao-app.svelte";
-  import SecaoInstitucional from "$lib/components/organisms/secao-institucional/secao-institucional.svelte";
+  import SecaoExpositiva from "$lib/components/organisms/secao-expositiva/secao-expositiva.svelte";
   import SecaoDuvidas from "$lib/components/organisms/secao-duvidas/secao-duvidas.svelte";
   import SecaoCci from "$lib/components/organisms/secao-cci/secao-cci.svelte";
   import SecaoBlogRecentes from "$lib/components/organisms/secao-blog-recentes/secao-blog-recentes.svelte";
@@ -18,7 +18,7 @@
   <SecaoPremios />
   <SecaoProjetos />
   <SecaoApp />
-  <SecaoInstitucional />
+  <SecaoExpositiva />
   <div
     class="flex flex-wrap items-center w-full max-lg:gap-[100px] lg:max-xl:justify-between xl:justify-center xl:gap-[100px]"
   >
