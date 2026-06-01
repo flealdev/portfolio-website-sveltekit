@@ -10,6 +10,6 @@
       Últimos artigos do blog
     </h2>
     <BlogPostsRecentes />
-    <BotaoCta titulo="Blog" href="/blog" />
+    <BotaoCta titulo="Blog" href="/" />
   </div>
 </ContainerBranco>

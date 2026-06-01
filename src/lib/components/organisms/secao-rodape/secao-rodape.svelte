@@ -11,16 +11,6 @@
   import EmpresasHolding from "$lib/components/molecules/empresas-holding/empresas-holding.svelte";
   import { browser } from "$app/environment";
 </script>
-
-<div class="flex flex-col gap-10 md:pt-[100px]">
-  {#if page.url.pathname !== "/"}
-    <NavegacaoSecundaria />
-  {/if}
-  <div class="flex flex-col items-center justify-center gap-10 pb-10">
-    <ImagensEmpresa />
-    <EmpresasHolding />
-  </div>
-</div>
 <footer class="flex flex-col gap-[20px]">
   <div>
     <div class="bg-principal-segunda h-[10px]"></div>
@@ -56,20 +46,18 @@
         </a>
       </div>
       <MenuSecundario />
-      <CardStatus />
     </div>
     <Divisor classes="border-4 border-auxiliar-quinta" />
     <div class="flex flex-col gap-5">
       <div class="nlf-item-menu-secundario w-full flex flex-col gap-[20px]">
         <p class="nlf-item-menu-secundario">
-          BRMOM CONSTRUINDO CONEXOES LTDA<br />CNPJ
-          05.144.467/0001-29<br />General Mallet, 497, CEP 97300-236, São
-          Gabriel - RS
+          RAZÃO SOCIAL DA EMPRESA<br />CNPJ
+          00.000.000/0000-00<br />Endereço completo da empresa
         </p>
         <p class="nlf-item-menu-secundario">
-          <a href="tel:05433101008">(54) 3310-1008</a><br /><a
-            href="mailto:contato@newlifefibra.com.br"
-            >contato@newlifefibra.com.br</a
+          <a href="tel:05500000000">(55) 0000-0000</a><br /><a
+            href="mailto:email@empresa.com.br"
+            >email@empresa.com.br</a
           >
         </p>
         <RedesSociais />

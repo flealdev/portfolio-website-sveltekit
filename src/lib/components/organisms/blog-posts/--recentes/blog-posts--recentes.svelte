@@ -2,28 +2,32 @@
   import CardArtigoBlog from "$lib/components/molecules/card-artigo-blog/card-artigo-blog.svelte";
   import AvisoErroCarregamento from "$lib/components/atoms/aviso-erro-carregamento/aviso-erro-carregamento.svelte";
   import CardArtigoBlogPlaceholder from "$lib/components/molecules/card-artigo-blog/--placeholder/card-artigo-blog--placeholder.svelte";
-  import { fetchUltimos3PostsApiWordpress } from "$lib/core/models/fetch";
-  import he from "he";
+
+const posts = [
+  {
+    href: "/",
+    titulo: "Título artigo 1",
+    descricao: "Descrição artigo 1"
+  },
+  {
+    href: "/",
+    titulo: "Título artigo 2",
+    descricao: "Descrição artigo 2"
+  },
+  {
+    href: "/",
+    titulo: "Título artigo 3",
+    descricao: "Descrição artigo 3"
+  }
+]
 </script>
 
-{#await fetchUltimos3PostsApiWordpress()}
-  <div class="flex flex-col max-md:gap-5 md:gap-10 justify-center items-center">
-    <CardArtigoBlogPlaceholder />
-    <CardArtigoBlogPlaceholder />
-    <CardArtigoBlogPlaceholder />
-  </div>
-{:then res}
   <div class="flex flex-col gap-[15px]">
-    {#each res.data.posts.nodes as post, i}
+    {#each posts as post}
       <CardArtigoBlog
-        href="/blog/{post.slug}"
-        titulo={he.decode(post.title.substr(0, 40))}
-        descricao={he.decode(
-          post.excerpt.replace(/(<([^>]+)>)/gi, "").substr(0, 40)
-        )}
+        href={post.href}
+        titulo={post.titulo}
+        descricao={post.descricao}
       />
     {/each}
   </div>
-{:catch}
-  <AvisoErroCarregamento />
-{/await}

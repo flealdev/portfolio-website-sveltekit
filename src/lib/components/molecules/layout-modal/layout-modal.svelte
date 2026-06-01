@@ -33,7 +33,7 @@
   >
     {#if fechar}
     <button
-      class="font-extrabold text-3xl leading-xs self-end"
+      class="font-extrabold text-3xl leading-xs self-end cursor-pointer"
       onclick={() => hideModalFlexHidden(id)}>X</button
     >
     {/if}

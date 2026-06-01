@@ -2,8 +2,6 @@
   import BotaoLink from "$lib/components/atoms/botao/--link/botao--link.svelte";
   import CardProdutoImpactante from "$lib/components/molecules/card-produto/--impactante/card-produto--impactante.svelte";
   import { page } from "$app/state";
-  import { fetchPlanosMensais } from "$lib/core/models/fetch";
-  import CardProdutoPlaceholderImpactante from "$lib/components/molecules/card-produto/--placeholder-impactante/card-produto--placeholder-impactante.svelte";
 
   const googleAds = $derived.by(
     () => page.url.searchParams.get("utm_source") || null

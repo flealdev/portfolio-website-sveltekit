@@ -2,7 +2,6 @@
   import Layout from "$lib/components/organisms/layout/layout.svelte";
 </script>
 
-<Layout>
   <div
     class="nlf-container nlf-padding flex flex-col max-md:gap-10 md:gap-20 md:items-center"
   >
@@ -466,4 +465,3 @@
       </div>
     </div>
   </div>
-</Layout>

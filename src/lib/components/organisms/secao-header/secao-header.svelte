@@ -58,4 +58,3 @@
         <Menu class="md:max-lg:w-full" order="max-lg:order-3 lg:order-2"/>
     </div>
 </header>
-<Breadcrumbs classes="max-md:pl-5 max-lg:px-5 lg:max-2xl:px-10"/>

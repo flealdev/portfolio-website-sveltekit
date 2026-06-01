@@ -1,7 +1,7 @@
 <script>
     import Botao from "$lib/components/atoms/botao/botao.svelte";
 
-    const {padding = "max-sm:px-5", classes = "border-b-1 border-preto/60", bgCor = "bg-branco"} = $props()
+    const {padding = "max-sm:px-5", classes = "border-b-1 border-preto/60", bgCor = "bg-branco", mensagem=`${encodeURI("Olá! Vim pelo site e gostaria de atendimento comercial. [NÃO EXCLUA]")}`} = $props()
 </script>
 
 <div
@@ -46,7 +46,7 @@
             titulo="Whatsapp"
             target="_blank"
             tipografia="max-md:text-[9px] md:max-lg:text-xs lg:text-sm font-bold font-bold"
-            href="/"
+            href="https://wa.me/5555999900000?text={mensagem}"
             textCor="text-branco"
             class=" bg-verde-4-principal max-md:px-[10px] md:px-[15px] max-md:py-[5px] md:py-[7px] rounded-[5px]"
     >
