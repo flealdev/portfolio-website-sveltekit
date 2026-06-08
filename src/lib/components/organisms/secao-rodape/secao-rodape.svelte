@@ -1,22 +1,16 @@
 <script>
   import MenuSecundario from "$lib/components/molecules/menu-secundario/menu-secundario.svelte";
-  import CardStatus from "$lib/components/molecules/card-status/card-status.svelte";
   import Divisor from "$lib/components/atoms/divisor/divisor.svelte";
-  import NavegacaoSecundaria from "$lib/components/molecules/navegacao-secundaria/navegacao-secundaria.svelte";
   import { page } from "$app/state";
   import RedesSociais from "$lib/components/atoms/redes-sociais/redes-sociais.svelte";
-  import ImagensEmpresa from "$lib/components/molecules/imagens-empresa/imagens-empresa.svelte";
-  // import tema from "$lib/stores/tema.svelte";
   import Copyright from "$lib/components/molecules/copyright/copyright.svelte";
-  import EmpresasHolding from "$lib/components/molecules/empresas-holding/empresas-holding.svelte";
-  import { browser } from "$app/environment";
 </script>
 <footer class="flex flex-col gap-[20px]">
   <div>
     <div class="bg-principal-segunda h-[10px]"></div>
     <div class="bg-principal-primeira h-[10px]"></div>
   </div>
-  <div class="px-[20px] pb-[15px] flex flex-col gap-[50px] nlf-container">
+  <div class="px-[20px] pb-[15px] flex flex-col gap-[50px] container">
     <div class="flex flex-wrap items-start justify-between gap-[20px]">
       <div
         class="flex w-full items-center {page.url.pathname != '/'
@@ -49,12 +43,12 @@
     </div>
     <Divisor classes="border-4 border-auxiliar-quinta" />
     <div class="flex flex-col gap-5">
-      <div class="nlf-item-menu-secundario w-full flex flex-col gap-[20px]">
-        <p class="nlf-item-menu-secundario">
+      <div class="item-menu-secundario w-full flex flex-col gap-[20px]">
+        <p class="item-menu-secundario">
           RAZÃO SOCIAL DA EMPRESA<br />CNPJ
           00.000.000/0000-00<br />Endereço completo da empresa
         </p>
-        <p class="nlf-item-menu-secundario">
+        <p class="item-menu-secundario">
           <a href="tel:05500000000">(55) 0000-0000</a><br /><a
             href="mailto:email@empresa.com.br"
             >email@empresa.com.br</a

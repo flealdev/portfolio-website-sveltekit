@@ -1,7 +1,7 @@
 <script>
     import BotaoPopup from "$lib/components/atoms/botao/--popup/botao--popup.svelte";
     import ContainerBranco from "$lib/components/atoms/container-branco/container-branco.svelte";
-    import {manipulaModal} from "$lib/core/utils";
+    import {manipulaModal} from "$lib/utils.js";
     import ModalDuvidasFrequentes
         from "$lib/components/molecules/modal-duvidas-frequentes/modal-duvidas-frequentes.svelte";
 
@@ -42,7 +42,7 @@
 <ContainerBranco class="w-full xl:w-[40%]">
     <div class="flex flex-col items-center gap-[30px] w-full">
         <h2
-                class="nlf-titulo-h2 text-auxiliar-primeira w-full lg:text-center dark:text-branco"
+                class="titulo-h2 text-auxiliar-primeira w-full lg:text-center dark:text-branco"
         >
             Dúvidas frequentes
         </h2>

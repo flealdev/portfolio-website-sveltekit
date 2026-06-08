@@ -3,10 +3,10 @@
 </script>
 
   <div
-    class="nlf-container nlf-padding flex flex-col max-md:gap-10 md:gap-20 md:items-center"
+    class="container padding flex flex-col max-md:gap-10 md:gap-20 md:items-center"
   >
     <div class="flex flex-col gap-5 md:items-center">
-      <!-- <h1 class="nlf-titulo-h1 text-vermelho">Erro</h1> -->
+      <!-- <h1 class="titulo-h1 text-vermelho">Erro</h1> -->
       <svg
         viewBox="0 0 500 501"
         fill="none"
@@ -458,7 +458,7 @@
           fill="#263238"
         />
       </svg>
-      <h1 class="nlf-titulo-h1 text-vermelho">Não encontrado</h1>
+      <h1 class="titulo-h1 text-vermelho">Não encontrado</h1>
       <div class="flex flex-col gap-1 md:items-center">
         <p class="">Não encontramos o conteúdo que você deseja</p>
         <p>Tente novamente mais tarde ou busque por algum outro termo.</p>

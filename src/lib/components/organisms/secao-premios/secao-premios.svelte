@@ -13,14 +13,14 @@
           <p class="nlf-subtitulo-h2 dark:text-branco">
             Subtítulo
           </p>
-          <h2 class="nlf-titulo-h2 dark:text-branco">
+          <h2 class="titulo-h2 dark:text-branco">
             Seção auxiliar
           </h2>
         </div>
-        <p class="nlf-paragrafo">
+        <p class="paragrafo">
           Utilize essa seção para informar alguma coisa relevante aos seus clientes, mas seja conciso e coerente.
         </p>
-        <p class="nlf-paragrafo">
+        <p class="paragrafo">
           Não utilize mais que dois parágrafos, mantenha o foco no objetivo de captar seu cliente ou informá-lo de forma rápida e simples
         </p>
       </div>

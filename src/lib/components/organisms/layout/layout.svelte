@@ -12,7 +12,7 @@
 </script>
 
 <SecaoHeader />
-<main class="max-md:pt-5 md:pt-10 pb-20 nlf-container">
+<main class="max-md:pt-5 md:pt-10 pb-20 container">
   {@render children?.()}
 
   <BotaoWppFlutuante {tituloWpp} {descricaoWpp}/>

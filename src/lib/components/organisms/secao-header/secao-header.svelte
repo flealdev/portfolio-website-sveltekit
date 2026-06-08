@@ -1,11 +1,10 @@
 <script>
     import Menu from "$lib/components/molecules/menu/menu.svelte";
     import Topbar from "$lib/components/organisms/secao-header/topbar/topbar.svelte";
-    import Breadcrumbs from "$lib/components/molecules/breadcrumbs/breadcrumbs.svelte";
 </script>
 
 <Topbar padding="px-5 py-2"/>
-<header class="max-2xl:px-5 sticky top-0 z-[2000] pt-3 pb-5 nlf-container ">
+<header class="max-2xl:px-5 sticky top-0 z-[2000] pt-3 pb-5 container ">
     <div
             class="flex flex-wrap max-md:gap-3 md:gap-5 items-center max-lg:px-5 lg:px-10 justify-between max-md:pt-5 max-md:pb-[25px] md:py-[30px] shadow-[0_0_10px_rgba(0,0,0,0.2)] border-preto/60 border-[5px] max-md:rounded-[30px] md:rounded-[50px] sticky top-0 z-[200000] bg-branco"
     >
@@ -26,7 +25,7 @@
         >
             <a
                     href="/"
-                    class="nlf-botao nlf-botao--gold flex justify-center items-center text-preto gap-[10px]"
+                    class="botao botao--gold flex justify-center items-center text-preto gap-[10px]"
             >
                 <svg width="20" height="20" viewBox="0 0 60 60" fill="none">
                     <g clip-path="url(#clip0_32_21)">
@@ -44,7 +43,7 @@
             <a
                     href="/"
                     target="_blank"
-                    class="lg:items-center w-max lg:justify-center nlf-botao bg-[#E0E0E0]  flex gap-[10px]"
+                    class="lg:items-center w-max lg:justify-center botao bg-[#E0E0E0]  flex gap-[10px]"
             >
                 <svg width="21" height="21" viewBox="0 0 21 21">
                     <path

@@ -8,8 +8,8 @@
   <img {src} {alt} class="w-[150px] aspect-150/152" />
   <div class="flex max-sm:w-full flex-col gap-[5px]">
     <div>
-      <p class="nlf-nota-rodape">{subtitulo}</p>
-      <p class="nlf-enfase">{titulo}</p>
+      <p class="nota-rodape">{subtitulo}</p>
+      <p class="enfase">{titulo}</p>
     </div>
     <div class="flex flex-col w-full items-center justify-center">
       <div class="w-full">
@@ -30,7 +30,7 @@
           ></svg
         >
       </div>
-      <p class="flex w-full pl-[20px] nlf-paragrafo">
+      <p class="flex w-full pl-[20px] paragrafo">
         {descricao}
       </p>
       <div class="flex w-full justify-end">

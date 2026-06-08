@@ -5,7 +5,7 @@
 </script>
 
 <p
-        class="nlf-enfase flex gap-[10px] items-center flex-wrap text-preto/40 dark:text-branco {classes}"
+        class="enfase flex gap-[10px] items-center flex-wrap text-preto/40 dark:text-branco {classes}"
 >
     <a
             target="_blank"

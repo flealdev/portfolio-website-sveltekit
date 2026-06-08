@@ -9,8 +9,8 @@
   <div
     class="flex flex-col gap-[10px] text-preto bg-auxiliar-segunda p-[20px] border-b-[5px] border-principal-primeira rounded-md"
   >
-    <h3 class="nlf-titulo-h3 text-auxiliar-primeira">{titulo}</h3>
-    <p class="nlf-paragrafo">{descricao}</p>
-    <p class="nlf-paragrafo font-bold">{frase}</p>
+    <h3 class="titulo-h3 text-auxiliar-primeira">{titulo}</h3>
+    <p class="paragrafo">{descricao}</p>
+    <p class="paragrafo font-bold">{frase}</p>
   </div>
 </div>

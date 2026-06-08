@@ -5,7 +5,7 @@
 </script>
 <ContainerBranco class="w-full" padding="py-10">
     <div class="flex flex-col items-center w-full gap-10">
-        <h2 class="nlf-titulo-h2  dark:text-branco px-5 w-full">
+        <h2 class="titulo-h2  dark:text-branco px-5 w-full">
             Relatos de colaboradores
         </h2>
         <div

@@ -1,1 +1,0 @@
-<div class="flex rounded-xl aspect-[5/3] w-[290px] bg-[#DCDCDC] shimmer"></div>

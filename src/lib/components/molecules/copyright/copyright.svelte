@@ -1,24 +1,8 @@
 <script>
-    // import tema from "$lib/stores/tema.svelte";
-    import Divisor from "$lib/components/atoms/divisor/divisor.svelte";
-
     const ano = new Date().getFullYear();
 </script>
 
-<div class="flex items-end gap-[5px] text-preto">
-    <p class="nlf-info-irrelevante">Uma empresa</p>
-    <a href="/" target="_blank">
-        <img
-                src="/assets/template/logo.jpg"
-                alt=""
-                class="w-[50px] aspect-50/28 rounded-md"
-        />
-    </a>
-</div>
-<Divisor
-        classes="border-2 justify-center w-full border-auxiliar-quinta/30"
-/>
-<div class="flex items-center justify-center nlf-info-irrelevante w-full text-center text-preto">
+<div class="flex items-center justify-center info-irrelevante w-full text-center text-preto">
     <p>v1.0 | © {ano}</p>
     <a href="https://sisefficere.com.br" target="_blank">
         <svg viewBox="0 0 1000 1000" fill="none" class="aspect-auto w-[70px]">

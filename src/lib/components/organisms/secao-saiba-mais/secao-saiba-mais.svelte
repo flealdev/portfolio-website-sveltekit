@@ -1,13 +1,13 @@
 <script>
   import CardEssencial from "$lib/components/molecules/card-essencial/card-essencial.svelte";
   import ModalLojasApp from "$lib/components/molecules/modal-lojas-app/modal-lojas-app.svelte";
-  import { manipulaModal } from "$lib/core/utils";
+  import { manipulaModal } from "$lib/utils.js";
 </script>
 
 <div
   class="rounded-[10px] border-[3px] shadow-container border-azul-2 bg-cover bg-[url(/assets/template/bg-acoes-secundarias.jpg)] py-[40px] px-5 flex flex-col gap-[50px] xl:max-w-[29rem] w-full"
 >
-  <h2 class="nlf-titulo-h2">Ações secundárias</h2>
+  <h2 class="titulo-h2">Ações secundárias</h2>
   <div class="flex flex-wrap items-center justify-center max-md:gap-[30px] md:max-xl:gap-[45px] xl:gap-[30px] w-full">
     <CardEssencial
       linha1="Primeira"

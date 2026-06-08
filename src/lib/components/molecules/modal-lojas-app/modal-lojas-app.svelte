@@ -14,10 +14,10 @@
 >
   <div class="flex flex-col w-full gap-5">
     <div class="flex flex-col gap-2">
-      <h2 class="nlf-titulo-h2 text-principal-primeira dark:text-branco">
+      <h2 class="titulo-h2 text-principal-primeira dark:text-branco">
         Facilite o seu dia a dia
       </h2>
-      <p class="nlf-paragrafo">Baixe já o nosso app!</p>
+      <p class="paragrafo">Baixe já o nosso app!</p>
     </div>
     <div class="flex justify-center flex-wrap gap-3 w-full items-center">
       <a

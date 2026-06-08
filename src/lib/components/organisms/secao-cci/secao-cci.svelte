@@ -7,7 +7,7 @@
     class="flex max-xl:flex-col xl:flex-wrap max-xl:items-center w-full xl:items-center  lg:max-xl:justify-around max-xl:gap-[30px] xl:gap-[50px] xl:justify-center"
   >
         <div class="max-xl:flex-col xl:flex-wrap items-center justify-center xl:max-w-[30%] flex flex-col w-full  shadow-container--vermelho bg-vermelho-4-principal border-vermelho-2 border-[3px] rounded-[10px] px-5 py-[25px] gap-[20px]">
-          <h2 class="nlf-titulo-h2 text-branco">
+          <h2 class="titulo-h2 text-branco">
             Seção 1
           </h2>
           <div class="flex flex-wrap justify-center gap-[15px]">
@@ -40,7 +40,7 @@
           </div>
         </div>
     <div class="flex flex-col shadow-container w-full lg:max-w-[40rem] gap-[20px] bg-azul-2 border-azul-1-claro border-[3px] rounded-[10px] px-5 py-[25px] xl:max-w-[30%]">
-      <h2 class="nlf-titulo-h2 text-branco">
+      <h2 class="titulo-h2 text-branco">
         Seção 2
       </h2>
       <div class="flex flex-wrap justify-center gap-[15px]">
@@ -80,7 +80,7 @@
       </div>
     </div>
     <div class="flex flex-col shadow-container w-full lg:max-w-[40rem] gap-[20px] bg-azul-2 border-azul-1-claro border-[3px] rounded-[10px] px-5 py-[25px] xl:max-w-[30%]">
-      <h2 class="nlf-titulo-h2 text-branco">
+      <h2 class="titulo-h2 text-branco">
         Seção 3
       </h2>
       <div class="flex flex-wrap justify-center gap-[15px]">

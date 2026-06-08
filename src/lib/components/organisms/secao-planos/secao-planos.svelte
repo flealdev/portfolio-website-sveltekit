@@ -1,11 +1,6 @@
 <script>
   import BotaoLink from "$lib/components/atoms/botao/--link/botao--link.svelte";
-  import CardProdutoImpactante from "$lib/components/molecules/card-produto/--impactante/card-produto--impactante.svelte";
-  import { page } from "$app/state";
-
-  const googleAds = $derived.by(
-    () => page.url.searchParams.get("utm_source") || null
-  );
+  import CardProdutoImpactante from "$lib/components/molecules/card-produto-impactante/card-produto-impactante.svelte";
 
   const planos = [
     {
@@ -37,7 +32,6 @@
     >
       {#each planos as plano}
         <CardProdutoImpactante
-            {googleAds}
             {...plano}
         />
       {/each}

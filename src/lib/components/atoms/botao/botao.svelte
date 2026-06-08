@@ -15,7 +15,7 @@
     class: classes = "",
     textCor="text-preto",
     classesTitulo = "",
-    tipografia = "nlf-item-com-icone",
+    tipografia = "item-com-icone",
     padding = true,
     children,
     target,

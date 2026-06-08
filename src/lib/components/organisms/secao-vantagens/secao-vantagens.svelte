@@ -72,7 +72,7 @@
 
 <div class="flex w-full flex-col gap-5 lg:max-w-[30rem]">
     <div class="flex flex-col itesm-center text-center gap-[10px]">
-        <h2 class="nlf-titulo-h2 text-azul-3">Escolha certo!</h2>
+        <h2 class="titulo-h2 text-azul-3">Escolha certo!</h2>
         <p>Vantagens de contratar conosco</p>
     </div>
     <div

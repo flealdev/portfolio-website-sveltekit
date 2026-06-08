@@ -34,10 +34,10 @@
 <LayoutModal {id} {fullscreen} {border} {overflowY}>
   <div class="flex flex-col h-full w-full gap-5 max-w-240">
     <div class="flex flex-col gap-2">
-      <h2 class="nlf-titulo-h2 text-principal-primeira dark:text-branco">
+      <h2 class="titulo-h2 text-principal-primeira dark:text-branco">
         {titulo}
       </h2>
-      <p class="nlf-paragrafo">{descricao}</p>
+      <p class="paragrafo">{descricao}</p>
     </div>
     <div
       class="flex w-full flex-col gap-[10px]"

@@ -1,5 +1,5 @@
 <script>
-  import { hideModalFlexHidden } from "$lib/core/utils";
+  import { hideModalFlexHidden } from "$lib/utils.js";
 
   let {
     id,

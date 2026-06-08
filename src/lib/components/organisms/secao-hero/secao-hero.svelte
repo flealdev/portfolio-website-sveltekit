@@ -1,6 +1,5 @@
 <script>
-  import FormContatoWpp from "$lib/components/molecules/form-contato/--wpp/form-contato--wpp.svelte";
-  import SliderImgPlaceholder from "$lib/components/molecules/slider-img/--placeholder/slider-img--placeholder.svelte";
+  import FormContatoWpp from "$lib/components/molecules/form-contato-wpp/form-contato-wpp.svelte";
   import SliderImg from "$lib/components/molecules/slider-img/slider-img.svelte";
 
   const { img } = $props();
@@ -29,7 +28,7 @@
          Sua empresa
         </h1>
       </div>
-      <p class="nlf-paragrafo text-center">
+      <p class="paragrafo text-center">
         Descrição do produto destacando os pontos fortes de cada opção.
       </p>
     </div>
@@ -39,9 +38,6 @@
     />
   </div>
 
-  <!--{#await fetchBannersDoMes()}-->
-  <!--  <SliderImgPlaceholder/>-->
-  <!--{:then res}-->
     <SliderImg
       slideClasses=""
       containerClasses="w-full max-lg:max-w-[400px] lg:max-w-[500px] "
@@ -59,7 +55,6 @@
       pauseOnMouseEnter={true}
       delay={2500}
     />
-  <!--{/await}-->
   <FormContatoWpp
     class="lg:hidden z-[1000]"
     textContainerClasses="lg:text-center"

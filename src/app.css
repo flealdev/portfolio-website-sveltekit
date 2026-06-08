@@ -184,128 +184,128 @@
 }
 
 
-.nlf-item-com-icone {
+.item-com-icone {
   /* V3 */
   @apply max-lg:text-xs lg:max-3xl:text-sm 3xl:text-md leading-sm;
 }
 
-.nlf-item-menu-principal {
+.item-menu-principal {
   @apply font-bold max-lg:text-sm lg:max-3xl:text-md 3xl:text-lg leading-xs;
 }
 
-.nlf-item-menu-secundario {
+.item-menu-secundario {
   @apply font-light max-3xl:text-sm 3xl:text-md leading-md;
 }
 
-.nlf-titulo-card {
+.titulo-card {
   @apply font-black max-lg:text-2lg lg:text-[30px] leading-xs;
 }
 
-.nlf-titulo-h1 {
+.titulo-h1 {
   @apply font-black max-lg:text-3xl lg:max-3xl:text-[40px] 3xl:text-[55px] leading-sm;
 }
 
-.nlf-titulo-h2 {
+.titulo-h2 {
   @apply font-black max-lg:text-2lg lg:max-3xl:text-[26px] 3xl:text-2xl leading-sm;
 }
 
-.nlf-titulo-h3 {
+.titulo-h3 {
   @apply font-semibold max-lg:text-2md lg:max-3xl:text-lg 3xl:text-2lg leading-sm;
 }
 
-.nlf-subtitulo--h1 {
+.subtitulo--h1 {
   @apply font-extralight max-lg:text-2lg lg:max-3xl:text-[25px] 3xl:text-[30px] leading-sm;
 }
 
-.nlf-subtitulo--h2 {
+.subtitulo--h2 {
   @apply font-extralight max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm;
 }
 
-.nlf-subtitulo--h3 {
+.subtitulo--h3 {
   @apply font-extralight text-md leading-sm;
 }
 
-.nlf-nota-rodape {
+.nota-rodape {
   @apply max-lg:text-xs lg:text-sm font-light leading-sm;
 }
 
-.nlf-paragrafo {
+.paragrafo {
   @apply max-lg:text-sm lg:max-3xl:text-md 3xl:text-2md leading-lg;
 }
 
-.nlf-info-irrelevante {
+.info-irrelevante {
   @apply text-xs leading-md font-light;
 }
 
-.nlf-enfase {
+.enfase {
   @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm;
 }
 
-.nlf-container {
+.container {
   @apply w-full mx-auto max-w-384;
 }
 
-.nlf-padding {
+.padding {
   @apply max-lg:px-5 lg:max-2xl:px-10;
 }
 
-.nlf-input {
+.input {
   @apply border text-sm text-preto rounded-md active:outline-hidden focus:outline-hidden active:ring-0 focus:ring-0 h-11.75 border-auxiliar-primeira shadow-[-0.2rem_0.2rem_0_#617EF6];
 }
 
-.nlf-input-file {
+.input-file {
   @apply text-sm w-max max-w-[400px];
 }
 
-.nlf-input-file--field {
+.input-file--field {
   @apply flex text-sm text-preto justify-center py-10 items-center w-full border border-auxiliar-primeira rounded-md shadow-[-0.2rem_0.2rem_0_#617EF6] active:outline-hidden focus:outline-hidden active:ring-0 focus:ring-0 active:border-principal-terceira focus:border-principal-terceira active:shadow-principal-terceira focus:shadow-principal-terceira;
 }
 
-.nlf-input--foco {
+.input--foco {
   @apply active:border-principal-terceira focus:border-principal-terceira active:shadow-principal-terceira focus:shadow-principal-terceira w-full;
 }
 
-.nlf-input--invalido {
+.input--invalido {
   @apply border-vermelho active:border-vermelho focus:border-vermelho active:shadow-vermelho focus:shadow-vermelho shadow-[-0.2rem_0.2rem_0_red];
 }
 
-.nlf-input-textarea {
+.input-textarea {
   @apply w-full border text-sm text-preto border-auxiliar-primeira rounded-md shadow-[-0.2rem_0.2rem_0_#617EF6] active:outline-hidden focus:outline-hidden active:ring-0 focus:ring-0 active:border-principal-terceira focus:border-principal-terceira active:shadow-principal-terceira focus:shadow-principal-terceira;
 }
 
-.nlf-botao {
-  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl max-md:px-3 max-md:py-5 md:p-5 text-center w-full md:max-w-88 nlf-grow cursor-pointer;
+.botao {
+  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl max-md:px-3 max-md:py-5 md:p-5 text-center w-full md:max-w-88 grow cursor-pointer;
 }
 
-.nlf-botao--livre {
-  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl max-md:px-3 max-md:py-5 md:p-5 text-center w-full nlf-grow cursor-pointer;
+.botao--livre {
+  @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl max-md:px-3 max-md:py-5 md:p-5 text-center w-full grow cursor-pointer;
 }
 
-.nlf-botao-compacto {
-  @apply text-sm flex items-center justify-center font-bold rounded-xl p-3 text-center w-full max-xs:max-w-[130px] xs:max-lg:max-w-40 lg:max-w-48 nlf-grow cursor-pointer;
+.botao-compacto {
+  @apply text-sm flex items-center justify-center font-bold rounded-xl p-3 text-center w-full max-xs:max-w-[130px] xs:max-lg:max-w-40 lg:max-w-48 grow cursor-pointer;
 }
 
-.nlf-botao--submit {
+.botao--submit {
   @apply bg-principal-terceira text-branco;
 }
 
-.nlf-botao--azul {
+.botao--azul {
   @apply bg-principal-primeira text-branco;
 }
 
-.nlf-botao--cta {
+.botao--cta {
   @apply bg-principal-terceira text-branco border-2 border-branco;
 }
 
-.nlf-botao--destaque {
+.botao--destaque {
   @apply bg-principal-segunda text-principal-primeira shadow-[-0.3rem_0.3rem_0_#1639CB];
 }
 
-.nlf-botao--gold {
+.botao--gold {
   @apply bg-[gold] max-xs:w-full;
 }
 
-@utility nlf-grow {
+@utility grow {
   transition: transform 0.4s ease-in-out;
   @apply hover:scale-[1.05] transition-all duration-500;
 }
@@ -314,68 +314,39 @@
   @apply overflow-hidden relative before:content-[''] before:bg-[linear-gradient(90deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.8)_40%,rgba(255,255,255,0)_100%)] before:absolute before:h-full before:w-full before:z-50 before:animate-shimmer;
 }
 
-.nlf-botao-full {
-  /* V2 */
-
-  /* .nlf-subtitulo {
-    @apply font-light text-lg leading-sm;
-  }
-
-  .nlf-etiquetas {
-    @apply font-extralight text-md leading-sm;
-  }
-
-  .nlf-nota_rodape {
-    @apply font-light text-sm leading-md;
-  }
-
-  .nlf-letras_miudas {
-    @apply font-light text-[0.625rem] leading-md;
-  } */
-
-  /* SEÇÕES */
-
-  /* .nlf-container-filho {
-    @apply max-w-[96rem] max-xl:px-5 xl:max-2xl:px-[5%];
-  }
-
-  .nlf-secao-block {
-    @apply flex flex-col gap-5;
-  } */
-
-  /* ELEMENTOS */
+.botao-full {
   @apply font-bold max-lg:text-md lg:max-3xl:text-2md 3xl:text-lg leading-sm rounded-xl text-center w-full;
 }
 
-.nlf-botao-principal--livre {
+.botao-principal--livre {
   @apply px-5 bg-principal-segunda text-auxiliar-terceira shadow-[-0.3rem_0.3rem_0_#1639CB];
 }
 
-.nlf-botao-secundario {
+.botao-secundario {
   @apply px-5 py-3 bg-principal-primeira text-branco shadow-[-0.3rem_0.3rem_0_#FFE404];
 }
 
-.nlf-botao-secundario--livre {
+.botao-secundario--livre {
   @apply px-5 bg-principal-primeira text-branco shadow-[-0.3rem_0.3rem_0_#FFE404];
 }
 
-.nlf-botao-secundario--sem_sombra {
+.botao-secundario--sem_sombra {
   @apply px-5 py-3 bg-principal-primeira text-branco;
 }
 
-.nlf-botao-paginacao {
+.botao-paginacao {
   @apply font-bold rounded-xl text-center max-md:w-full md:w-max px-5 py-3 shadow-[-0.3rem_0.3rem_0_#FFE404] text-branco;
 }
 
-.nlf-botao-paginacao__habilitado {
-  @apply cursor-pointer nlf-grow bg-principal-primeira;
+.botao-paginacao__habilitado {
+  @apply cursor-pointer grow bg-principal-primeira;
 }
 
-.nlf-botao-paginacao__desabilitado {
+.botao-paginacao__desabilitado {
   @apply cursor-auto bg-principal-primeira/20;
 }
 
-.nlf-botao-auxiliar {
+.botao-auxiliar {
   @apply px-5 py-3 border-2 border-auxiliar-primeira dark:border-branco dark:text-branco text-auxiliar-primeira;
 }
 

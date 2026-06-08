@@ -1,13 +1,9 @@
 <script>
     import Botao from "$lib/components/atoms/botao/botao.svelte";
-    import Divisor from "$lib/components/atoms/divisor/divisor.svelte";
     import RedesSociais from "$lib/components/atoms/redes-sociais/redes-sociais.svelte";
-    import {mount} from "svelte";
-    import ModalLojasApp from "$lib/components/molecules/modal-lojas-app/modal-lojas-app.svelte";
-    import {manipulaModal} from "$lib/core/utils";
     import Copyright from "../../copyright/copyright.svelte";
     import LayoutModal from "$lib/components/molecules/layout-modal/layout-modal.svelte";
-    import {hideModalFlexHidden} from "$lib/core/utils";
+    import {hideModalFlexHidden} from "$lib/utils.js";
 
     /**
      * @typedef {Object} Props
@@ -25,10 +21,10 @@
         <div
                 class="flex justify-between items-center"
         >
-            <p class="nlf-enfase font-black">Menu</p>
+            <p class="enfase font-black">Menu</p>
             <button
                     onclick={() => hideModalFlexHidden(id)}
-                    class="flex items-center justify-center gap-[10px] nlf-paragrafo font-light"
+                    class="flex items-center justify-center gap-[10px] paragrafo font-light"
             ><span>Fechar</span>
                 <svg width="20" height="16" viewBox="0 0 20 16">
                     <path
@@ -43,7 +39,7 @@
                     class="flex flex-wrap w-full max-xs:gap-[5px] max-xs:justify-around xs:gap-5 xs:justify-center"
             >
                 <a
-                        class="nlf-botao-compacto nlf-botao--gold max-xs:max-w-full flex gap-[5px]"
+                        class="botao-compacto botao--gold max-xs:max-w-full flex gap-[5px]"
                         href="/"
                 >
                     <svg
@@ -60,7 +56,7 @@
                 </a>
                 <a
                         href="/avalie"
-                        class="nlf-botao-compacto bg-preto/40 max-xs:max-w-full text-branco flex gap-[5px]"
+                        class="botao-compacto bg-preto/40 max-xs:max-w-full text-branco flex gap-[5px]"
                         onclick={() => hideModalFlexHidden(id)}
                 >
                     <svg
