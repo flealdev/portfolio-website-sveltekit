@@ -1,22 +1,10 @@
-# Site New Life Fibra
+# Website institucional
 
 ## O quê?
 
-Webapp no estilo website moderno e atualizado, construído sobre a última versão do framework SvelteKit, utilizando a biblioteca de UI Svelte e JavaScript.
+Website moderno e atualizado, construído sobre a última versão do framework SvelteKit, utilizando a biblioteca de UI Svelte e JavaScript.
 
-## Por quê?
-
-Novo projeto teve início devido ao anterior utilizar uma versão antiga do framework além de ter sido construído sobre uma visão desktop first. Surgiram vários pontos de melhoria na interface e a possibilidade de adequar toda a estrutura para utilizar uma abordagem de aplicação com várias melhorias:
-
-- corretores a nível de código e de estilo
-- padronização de commits
-- testes automatizados
-- arquitetura MVC
-- DevOps aprimorado com CI e CD
-
-## Como?
-
-Utilizando as seguintes tecnologias:
+## Tecnologias utilizadas
 
 - Cloudflare Pages para ambiente de CD (implantação contínua) homologação e produção.
 - TailwindCSS para estilização
@@ -28,4 +16,4 @@ Utilizando as seguintes tecnologias:
 - `commitlint` para lint de commits
 - desenvolvimento mobile first
 
-Entre outras ferramentas e tecnologias.
+Entre outras
