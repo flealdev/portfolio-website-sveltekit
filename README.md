@@ -1,7 +1,5 @@
 # Website institucional
 
-## O quê?
-
 Website moderno e atualizado, construído sobre a última versão do framework SvelteKit, utilizando a biblioteca de UI Svelte e JavaScript.
 
 ## Tecnologias utilizadas
